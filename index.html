@@ -22,14 +22,14 @@
             <div class="col-lg-3">
                 <!-- logo -->
                 <div class="d-flex justify-content-center mb-2">
-                    <a id="logo" class="navbar-brand d-none d-lg-block" href="#"><img class="logo" src="index/logo.png"
-                            alt=""></a>
+                    <a id="logo" class="navbar-brand d-none d-lg-block" href="#home"><img class="logo"
+                            src="index/logo.png" alt=""></a>
                 </div>
                 <!-- logo -->
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- logo -->
                     <div class="d-flex justify-content-center mb-4 d-block d-lg-none">
-                        <a id="logo_mobile" class="navbar-brand"><img class="logo-mobile" href="#"
+                        <a id="logo_mobile" class="navbar-brand"><img class="logo-mobile" href="#home"
                                 src="index/logo-mobile.png" alt=""></a>
                     </div>
                     <!-- logo -->
@@ -101,10 +101,10 @@
 
                         <div class="tab-pane active">
                             <!-- img/home -->
-                            <div class="row">
+                            <div id="home" class="row">
+
                                 <div class="col-6 box">
-                                    <a href="#menu1">
-                                        <img src="index/index-img-03.jpg" alt="">
+                                    <img src="index/index-img-03.jpg" alt="">
                                     <div class="box-hover-text">
                                         <h5 class="box-body">
                                         </h5>
@@ -112,7 +112,6 @@
                                             19.Web visual / Dr.torng
                                         </p>
                                     </div>
-                                    </a>                           
                                 </div>
 
                                 <div class="col-6 box">
@@ -125,6 +124,7 @@
                                         </p>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="row">
@@ -470,9 +470,15 @@
             $(".nav-tabs-outer").toggleClass('show');
         })
 
-        $('#logo, #logo_mobile').click(function () {
-            //alert('test')
-            location.reload();
+        $('.nav-tabs a').on('click', function () {
+            let link = $(this).attr('href')
+            $('#home').fadeOut(300);
+            $(link).addClass('active show')
+        })
+
+        $('.navbar-brand').on('click', function () {
+            $('.tab-pane').removeClass('active show');
+            $('#home').fadeIn(300)
         })
     </script>
 </body>
