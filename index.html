@@ -471,6 +471,7 @@
         $('.nav-tabs a').on('click', function () {
             let link = $(this).attr('href')
             $('#home').fadeOut(300);
+            $('.tab-pane').removeClass('active show');
             $(link).addClass('active show')
         })
 
