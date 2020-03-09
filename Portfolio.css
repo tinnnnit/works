@@ -308,7 +308,9 @@ li {
   }
   
   .box:hover .box-hover-text {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .box .box-hover-text {
@@ -324,14 +326,19 @@ li {
   .box .box-body {
     color: #fff;
   }
+
+  h4.box-body {
+    letter-spacing: 2px;
+}
+
+@media (max-width: 990px) {
+    h4.box-body {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+}
   
-  /* h5.box-body {
-    padding-top: 10px;
-    text-align: center;
-  } */
-  
-  p.box-body {
-    text-align: center;
-    padding: 15px;
-    line-height: 20rem;
+  span.box-body {
+      letter-spacing: 1px;
+      font-size: 13px;
   }
