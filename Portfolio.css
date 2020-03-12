@@ -268,18 +268,18 @@ li {
 }
 
 .nav-tabs-outer.show {
-    height: 400px;
+    height: 410px;
 }
 
 @media (min-width:991px) {
     .nav-tabs-outer {
-        height: 400px;
+        height: 410px;
         overflow-y: scroll;
         transition: .3s;
     }
 
     .nav-tabs-outer.show {
-        height: 400px;
+        height: 410px;
         overflow-y: scroll;
         transition: .3s;
     }
@@ -341,4 +341,25 @@ h4.box-body {
 span.box-body {
       letter-spacing: 1px;
       font-size: 13px;
+}
+
+.about a {
+    color: #D4145A;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.about a:hover {
+    text-decoration: none;
+    color: #D4145A;
+    text-align: center;
+}
+
+
+@media (max-width: 990px) {
+    .about {
+        display: flex;
+        justify-content: center;
+    }
 }
