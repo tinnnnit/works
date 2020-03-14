@@ -368,7 +368,7 @@ span.box-body {
 
 .about a {
     color: #D4145A;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     text-align: center;
 }
@@ -389,5 +389,5 @@ span.box-body {
 
 .box h6 {
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 14px;
 }
