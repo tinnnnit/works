@@ -199,7 +199,7 @@ li {
 }
 
 .nav-tabs li a {
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
@@ -233,7 +233,7 @@ li {
 
 .caption {
     position: relative;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
     margin-top: 3.5rem;
 }
@@ -256,8 +256,8 @@ li {
 .version span{
     color: #fff;
     background-color: #D4145A;
-    border-radius: 15px;
-    padding:5px 10px;
+    border-radius: 2px;
+    padding:1px 10px;
     font-size: 12px;
 }
 
@@ -368,7 +368,7 @@ span.box-body {
 
 .about a {
     color: #D4145A;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     text-align: center;
 }
