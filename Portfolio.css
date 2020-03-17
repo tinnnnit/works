@@ -181,11 +181,11 @@ li {
     /* border-radius: 100px; */
     background-color: transparent;
     border: transparent;
-    color: #333333;
+    color: #3E3A39;
     /* top: 30px;
     left: 50px; */
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    /* -webkit-transition-duration: 0.5s; */
+    transition-duration: 0.2s;
     cursor: pointer;
 }
 
@@ -209,7 +209,7 @@ li {
 
 .nav-tabs li a:hover {
     text-decoration: none;
-    color: #D4145A;
+    color: #DCDDDD;
 }
 
 .navbar-light .navbar-toggler {
@@ -222,13 +222,16 @@ li {
 }
 
 .logo-mobile {
-    width: 40px;
+    width: 120px;
     cursor: pointer;
 }
 
 .navbar-light .navbar-toggler-icon {
     background-image: url('index/button.png');
-    background-size: contain;
+    /* background-size: auto; */
+    border: 1px solid #3E3A39;
+    width: 40px;
+    border-radius: 5px;
 }
 
 .caption {
@@ -244,18 +247,19 @@ li {
     top: -1rem;
     width: 100%;
     height: 1px;
-    background-color: #D4145A;
+    background-color: #3E3A39;
 }
 
 .title {
-    color: #D4145A;
+    color: #3E3A39;
     font-size: 14px;
     font-weight: bold;
 }
 
 .version span{
-    color: #fff;
-    background-color: #D4145A;
+    color: #3E3A39;
+    /* background-color: #3E3A39; */
+    border: 1px solid #3E3A39;
     border-radius: 2px;
     padding:1px 10px;
     font-size: 12px;
@@ -268,18 +272,18 @@ li {
 }
 
 .nav-tabs-outer.show {
-    height: 410px;
+    height: 415px;
 }
 
 @media (min-width:991px) {
     .nav-tabs-outer {
-        height: 410px;
+        height: 415px;
         overflow-y: scroll;
         transition: .3s;
     }
 
     .nav-tabs-outer.show {
-        height: 410px;
+        height: 415px;
         overflow-y: scroll;
         transition: .3s;
     }
@@ -337,7 +341,7 @@ li {
     left: 0;
     top: 0;
     display: none;
-    background-color: rgba(212,20,90, 0.7);
+    background-color: rgba(239,239,239, 0.7);
 }
 
 @media (max-width: 990px) {
@@ -347,7 +351,7 @@ li {
 }
   
 .box .box-body {
-    color: #fff;
+    color: #3E3A39;
 }
 
 h4.box-body {
@@ -367,16 +371,26 @@ span.box-body {
 }
 
 .about a {
-    color: #D4145A;
+    background-color: #ffffff;
+    border: 1px solid #3E3A39;
+    padding: 2px 4px;
+    color: #3E3A39;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
+    border-radius: 2px;
+    transition-duration: 0.2s;
 }
 
 .about a:hover {
+    background-color: #3E3A39;
+    border: 1px solid #3E3A39;
+    padding: 2px 4px;
     text-decoration: none;
-    color: #D4145A;
+    color: #ffffff;
     text-align: center;
+    border-radius: 2px;
+    transition-duration: 0.2s;
 }
 
 
