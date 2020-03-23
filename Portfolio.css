@@ -185,7 +185,7 @@ li {
     /* top: 30px;
     left: 50px; */
     /* -webkit-transition-duration: 0.5s; */
-    transition-duration: 0.3s;
+    transition-duration: 0.25s;
     cursor: pointer;
 }
 
@@ -380,7 +380,7 @@ span.box-body {
     cursor: pointer;
     text-align: center;
     border-radius: 2px;
-    transition-duration: 0.3s;
+    transition-duration: 0.25s;
 }
 
 .about a:hover {
@@ -390,7 +390,7 @@ span.box-body {
     color: #ffffff;
     text-align: center;
     border-radius: 2px;
-    transition-duration: 0.3s;
+    /* transition-duration: 0.4s; */
 }
 
 
