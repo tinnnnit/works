@@ -406,3 +406,65 @@ span.box-body {
     letter-spacing: 1px;
     font-size: 14px;
 }
+
+.intro-work {
+    font-size: 12px;
+    /* letter-spacing: 1px; */
+    line-height: 22px;
+    color: #324853;
+}
+
+.intro-work span {
+    color: #A46939;
+    font-size: 12px;
+}
+
+.e-work {
+    background-color: rgba(228, 200, 200, 0.24);
+    padding: 25px 40px 0px 40px;
+}
+
+@media (max-width: 990px) {
+    .e-work {
+        padding: 25px 20px 0px 20px;
+    }
+}
+
+.e-work h6 {
+    color: #324853;
+}
+
+.e-work span {
+    color: #A46939;
+    font-size: 12px;
+}
+
+.about-img{
+    border-radius: 100%;
+}
+
+@media (max-width: 990px) {
+    .about-img{
+        max-width: 40%;
+    }
+}
+
+.table tbody th {
+    border-bottom: transparent;
+    font-size: 13px;
+    color: #324853;
+    border-top: 1px solid #F8F5F3;
+    padding: 15px 0px 15px 0px;
+}
+
+.table tbody td {
+    border-bottom: transparent;
+    font-size: 13px;
+    vertical-align: middle;
+    color: #324853;
+    border-top: 1px solid #F8F5F3;
+}
+
+.i-mail {
+    height: 13px;
+}
