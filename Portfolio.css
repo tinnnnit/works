@@ -457,12 +457,24 @@ span.box-body {
     padding: 15px 0px 15px 0px;
 }
 
+@media (max-width: 990px) {
+    .table tbody th {
+        font-size: 12px;
+    }
+}
+
 .table tbody td {
     border-bottom: transparent;
     font-size: 13px;
     vertical-align: middle;
     color: #324853;
     border-top: 1px solid #F8F5F3;
+}
+
+@media (max-width: 990px) {
+    .table tbody td {
+        font-size: 12px;
+    }
 }
 
 .i-mail {
