@@ -403,8 +403,7 @@ span.box-body {
 }
 
 .e-work {
-    background-color: rgba(228, 200, 200, 0.24);
-    padding: 25px 40px 0px 40px;
+    padding: 25px 15px 0px 15px;
 }
 
 @media (max-width: 990px) {
@@ -437,7 +436,7 @@ span.box-body {
     font-size: 13px;
     color: #324853;
     border-top: 1px solid #F8F5F3;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 15px 10px;
 }
 
 @media (max-width: 990px) {
@@ -463,3 +462,7 @@ span.box-body {
 .i-mail {
     height: 13px;
 }
+
+tr:nth-child(odd){
+	background-color: rgba(228, 200, 200, 0.24);
+	}
