@@ -392,7 +392,7 @@ span.box-body {
 }
 
 .intro-work {
-    font-size: 12px;
+    font-size: 11.5px;
     /* letter-spacing: 1px; */
     line-height: 22px;
     color: #324853;
@@ -400,7 +400,7 @@ span.box-body {
 
 .intro-work span {
     color: #af9887;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 .e-work {
@@ -419,7 +419,7 @@ span.box-body {
 
 .e-work span {
     color: #ad9786;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 .about-img{
@@ -434,7 +434,7 @@ span.box-body {
 
 .table tbody th {
     border-bottom: transparent;
-    font-size: 13px;
+    font-size: 12px;
     color: #324853;
     border-top: 1px solid #F8F5F3;
     padding: 15px 0px 15px 10px;
