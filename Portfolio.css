@@ -92,7 +92,13 @@ li {
 }
 
 .navbar-brand {
-    width: 85%;
+    width: 100%;
+}
+
+@media (min-width:991px) {
+    .navbar-brand {
+        width: 90%;
+    }
 }
 
 .date {
@@ -220,8 +226,14 @@ li {
     }
 }
 
-.navbar-toggler {
-    padding: 0px 0px;
+.navbar {
+    padding: 1rem 1rem;
+}
+
+@media (max-width: 990px) {
+    .navbar {
+        padding: 0.5rem 0rem;
+    }
 }
 
 .navbar-light .navbar-toggler {
