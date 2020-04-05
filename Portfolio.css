@@ -201,7 +201,7 @@ li {
 }
 
 .logo {
-    width: 160px;
+    width: 180px;
 }
 
 .logo-mobile {
@@ -256,12 +256,12 @@ li {
 }
 
 .nav-tabs-outer.show {
-    height: 420px;
+    height: 450px;
 }
 
 @media (min-width:991px) {
     .nav-tabs-outer {
-        height: 420px;
+        height: 440px;
         overflow-y: scroll;
         transition: .3s;
     }
@@ -325,7 +325,7 @@ li {
     left: 0;
     top: 0;
     display: none;
-    background-color: rgba(228, 200, 200, 0.8);
+    background-color: rgba(243, 245, 248, 0.8);
 }
 
 @media (max-width: 990px) {
@@ -356,9 +356,9 @@ span.box-body {
 
 .about a {
     background-color:transparent;
-    border: 1px solid #A46939;
+    border: 1px solid #aebabd;
     padding: 2px 13px;
-    color: #A46939;
+    color: #aebabd;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -367,8 +367,8 @@ span.box-body {
 }
 
 .about a:hover {
-    background-color: #A46939;
-    border: 1px solid #A46939;
+    background-color: #aebabd;
+    border: 1px solid #aebabd;
     text-decoration: none;
     color: #ffffff;
     text-align: center;
@@ -398,7 +398,7 @@ span.box-body {
 }
 
 .intro-work span {
-    color: #A46939;
+    color: #af9887;
     font-size: 12px;
 }
 
@@ -417,7 +417,7 @@ span.box-body {
 }
 
 .e-work span {
-    color: #A46939;
+    color: #ad9786;
     font-size: 12px;
 }
 
@@ -464,7 +464,7 @@ span.box-body {
 }
 
 tr:nth-child(odd){
-	background-color: rgba(228, 200, 200, 0.24);
+	background-color: rgba(190, 205, 209, 0.25);
     }
 
 /* tr:nth-child(even){
