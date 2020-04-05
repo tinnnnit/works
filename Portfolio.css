@@ -188,12 +188,36 @@ li {
 }
 
 .nav-tabs li {
-    margin-bottom: 2.3px;
+    margin-bottom: 1.7px;
 }
 
 .nav-tabs li a:hover {
     text-decoration: none;
     color: #AEBABD;
+}
+
+.nav-tabs-outer {
+    height: 0px;
+    overflow-y: scroll;
+    transition: .3s;
+}
+
+.nav-tabs-outer.show {
+    height: 430px;
+}
+
+@media (min-width:991px) {
+    .nav-tabs-outer {
+        height: 450px;
+        overflow-y: scroll;
+        transition: .3s;
+    }
+
+    .nav-tabs-outer.show {
+        height: 450px;
+        overflow-y: scroll;
+        transition: .3s;
+    }
 }
 
 .navbar-toggler {
@@ -252,30 +276,6 @@ li {
     border-radius: 2px;
     padding:1px 10px;
     font-size: 12px;
-}
-
-.nav-tabs-outer {
-    height: 0px;
-    overflow-y: scroll;
-    transition: .3s;
-}
-
-.nav-tabs-outer.show {
-    height: 420px;
-}
-
-@media (min-width:991px) {
-    .nav-tabs-outer {
-        height: 440px;
-        overflow-y: scroll;
-        transition: .3s;
-    }
-
-    .nav-tabs-outer.show {
-        height: 420px;
-        overflow-y: scroll;
-        transition: .3s;
-    }
 }
 
 ::-webkit-scrollbar {
