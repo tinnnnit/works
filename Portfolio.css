@@ -91,9 +91,9 @@ li {
     max-width: 240px;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     width: 85%;
-}
+} */
 
 .date {
     font-size: 9px;
@@ -234,7 +234,7 @@ li {
 }
 
 .logo-mobile {
-    width: 120px;
+    width: 130px;
     cursor: pointer;
 }
 
