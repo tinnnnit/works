@@ -196,6 +196,10 @@ li {
     color: #AEBABD;
 }
 
+.navbar-toggler {
+    padding: 0px 0px;
+}
+
 .navbar-light .navbar-toggler {
     color: transparent;
     border-color: transparent;
