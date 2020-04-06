@@ -194,7 +194,7 @@ li {
 }
 
 .nav-tabs li {
-    margin-bottom: 1.7px;
+    margin-bottom: 1.2px;
 }
 
 .nav-tabs li a:hover {
@@ -227,7 +227,7 @@ li {
 }
 
 .navbar {
-    padding: 1rem 1rem;
+    padding: 0.4rem 1rem;
 }
 
 @media (max-width: 990px) {
@@ -283,11 +283,11 @@ li {
 
 .version span{
     color: #324853;
-    /* background-color: #324853; */
-    border: 1px solid #324853;
+    background-color: rgba(190, 205, 209, 0.3);
+    /* border: 1px solid #324853; */
     border-radius: 2px;
     padding:1px 10px;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 ::-webkit-scrollbar {
