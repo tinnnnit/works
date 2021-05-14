@@ -1,7 +1,52 @@
 body {
     /* font-weight: lighter; */
     position: relative;
-    background-color: #F8F5F3;
+    background-color: rgb(255, 255, 255);
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+.et-hero-tabs{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 20vh;
+position: relative;
+background: #eee;
+    text-align: center;
+    padding: 0 2em;
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+}
+
+.et-slide {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+position: relativef;
+background: #eee;
+    text-align: center;
+    padding: 0 2em;
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
 }
 
 @media (max-width: 480px) {
@@ -436,6 +481,20 @@ span.box-body {
     .table tbody td {
         font-size: 12px;
     }
+}
+
+
+.accordion-button {
+    width: 180px;
+    justify-content: center;
+    /* margin-left: px; */
+    margin-bottom: 8px;
+    background-color:transparent;
+    border: 1px solid #aebabd;
+    padding: 10px 15px 10px 15px;
+    color: #111111;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .i-mail {
