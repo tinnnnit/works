@@ -1,7 +1,7 @@
 body {
     /* font-weight: lighter; */
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f1eb;
     font-family: "Century Gothic", 'Lato', sans-serif;
 }
 
@@ -118,7 +118,9 @@ li {
     left: 840px;
 } */
 
-/* .box {
+/* 
+.box {
+    background-color: thistle;
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
@@ -191,7 +193,7 @@ li {
     font-size: 11.3px;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
-    color: #324853;
+    color: #000000;
 }
 
 .nav-tabs li {
@@ -206,7 +208,7 @@ li {
 
 .nav-tabs li a:hover {
     text-decoration: none;
-    color: #AEBABD;
+    color: #cccccc;
 }
 
 .nav-tabs-outer {
@@ -249,7 +251,7 @@ li {
 }
 
 .logo {
-    width: 190px;
+    width: 210px;
 }
 
 .logo-mobile {
@@ -349,7 +351,7 @@ li {
     left: 0;
     top: 0;
     display: none;
-    background-color: rgba(243, 245, 248, 0.8);
+    background-color: rgba(255, 230, 120, 0.8);
 }
 
 @media (max-width: 990px) {
@@ -359,7 +361,7 @@ li {
 }
   
 .box .box-body {
-    color: #324853;
+    color: #000000;
 }
 
 h4.box-body {
@@ -483,18 +485,26 @@ span.box-body {
     }
 }
 
-
 .accordion-button {
-    width: 180px;
+    width: 188px;
     justify-content: center;
     /* margin-left: px; */
-    margin-bottom: 8px;
-    background-color:transparent;
-    border: 1px solid #aebabd;
+    margin-bottom: 15px;
+    /* background-color:transparent; */
+    background-color: #f4f1eb;
+    border: transparent;
+    border: 2px solid #000000;
+    border-radius: 14px;
     padding: 10px 15px 10px 15px;
-    color: #111111;
+    color: #000000;
     font-size: 14px;
     letter-spacing: 1px;
+}
+
+.e-title {
+    margin-bottom: -18px;
+    font-size: 10px;
+    color: #000000; 
 }
 
 .i-mail {
