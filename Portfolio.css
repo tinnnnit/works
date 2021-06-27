@@ -1,7 +1,7 @@
 body {
     /* font-weight: lighter; */
     position: relative;
-    background-color: #f4f1eb;
+    background-color: #F8F5F3;
     font-family: "Century Gothic", 'Lato', sans-serif;
 }
 
@@ -237,7 +237,8 @@ li {
 }
 
 .navbar {
-    padding: 0.4rem 1rem;
+    justify-content: center;
+    /* padding: 0.4rem 1rem; */
 }
 
 @media (max-width: 990px) {
@@ -327,6 +328,7 @@ li {
     width: 100%;
     height: auto;
     transition: all 0.6s;
+    /* -webkit-filter: grayscale(100%); */
 }
   
 .box:hover img {
@@ -362,7 +364,8 @@ li {
 }
   
 .box .box-body {
-    color: #000000;
+    color: #2b2b2b;
+    letter-spacing: 0.5px;
 }
 
 h4.box-body {
@@ -385,7 +388,7 @@ span.box-body {
     background-color:transparent;
     border: 1px solid #aebabd;
     padding: 2px 13px;
-    color: #aebabd;
+    color: #1d698f;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -487,17 +490,17 @@ span.box-body {
 }
 
 .accordion-button {
-    width: 188px;
+    width: 186px;
     justify-content: center;
     /* margin-left: px; */
     margin-bottom: 13px;
     /* background-color:transparent; */
-    background-color: #f4f1eb;
-    border: transparent;
-    border: 2px solid #000000;
-    border-radius: 14px;
+    background-color: #F8F5F3;
+    /* border: transparent; */
+    border: 1px solid #2b2b2b;
+    /* border-radius: 10px; */
     padding: 10px 15px 10px 15px;
-    color: #000000;
+    color: #2b2b2b;
     font-size: 14px;
     letter-spacing: 1px;
 }
