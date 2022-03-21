@@ -379,24 +379,19 @@ li {
 }
   
 .box .box-body {
-    color: #ffffff;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
 }
 
 h4.box-body {
+    color: #ffffff;
     letter-spacing: 2px;
-}
-
-@media (max-width: 990px) {
-    h4.box-body {
-        letter-spacing: 1px;
-        font-size: 18px;
-    }
+    font-size: 20px;
 }
   
 span.box-body {
       letter-spacing: 1px;
-      font-size: 12px;
+      font-size: 10px;
+      color: #ffffff;
 }
 
 .about a {
