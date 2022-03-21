@@ -14,12 +14,11 @@
 
 <body>
     <!-- 頂 -->
-    <div class="container mb-5">
+    <!-- <div class="container mb-5">
         <nav class="navbar fixed-top">
             <ul class="nav justify-content-center">
                 <li class="nav-list">
                     <a href="#selection1" class="nav-link">Link</a>
-                        <!-- <img class="nav-icon rounded mx-auto d-block" src="#" alt=""> -->
                 </li>
                 <li class="nav-list">
                     <a href="#selection2" class="nav-link text-center">Link</a>
@@ -29,408 +28,311 @@
                 </li>
             </ul>
         </nav>
+    </div> -->
+
+    <!-- <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="index/test.png" alt="" width="50" height="50">
+            </a>
+        </div>
+    </nav> -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#selection1">Web design</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#selection2">APP design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#selection3">Graphic design</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <div class="container-fluid mt-5">
-        <div class="d-flex justify-content-between">
-            <h6 class="title">123456789123456789123456789123456789123456789123456789<br>123456789123456789123456789123456789</h6>
+        <!-- <div class="d-flex justify-content-between">
+            <h6 class="title">
+                123456789123456789123456789123456789123456789123456789<br>123456789123456789123456789123456789</h6>
             <h6 class="title">Web</h6>
-        </div>
+        </div> -->
+
+        <!-- 第一排測試 -->
         <section id="selection1">
             <!-- 第一排 -->
             <div class="row justify-content-center">
                 <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu1">
                     <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                        <img src="index/index-img-01.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">ACH IN</h4>
+                                <span class="box-body">Web design
+                                </span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-01.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        ACH IN / Web design
                     </h6>
                 </div>
                 <!-- 第一格圖片匡 -->
 
                 <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu2">
                     <a href="#menu2">
-                        <img src="index/index-img-008.png" alt="" class="thumbnail">
+                        <img src="index/index-img-02.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">大戶翁</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu2">
-                        <img src="index/web-02.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-02.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        大戶翁 / Web design
                     </h6>
                 </div>
                 <!-- 第二格圖片匡 -->
 
                 <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu3">
+                    <a href="#menu3">
+                        <img src="index/index-img-03.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">DA神預測</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-03.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        DA神預測 / Web design
                     </h6>
                 </div>
                 <!-- 第三格圖片匡 -->
 
                 <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu4">
+                    <a href="#menu4">
+                        <img src="index/index-img-04.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">車貸聯絡頁</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-04.png">
+                            <img class="img1 mt-2" src="index/web-04-1.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        車貸聯絡頁 / Web design
                     </h6>
                 </div>
                 <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
             </div>
             <!-- 第一排 -->
 
             <!-- 第二排 -->
             <div class="row justify-content-center">
                 <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu5">
+                    <a href="#menu5">
+                        <img src="index/index-img-05.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">基金</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                class="btn" data-bs-dismiss="modal">Close</button>
+                                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-05.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        基金 / Web design
                     </h6>
                 </div>
                 <!-- 第一格圖片匡 -->
 
                 <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu6">
+                    <a href="#menu6">
+                        <img src="index/index-img-10.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">牙醫</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                class="btn" data-bs-dismiss="modal">Close</button>
+                                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-10.jpg">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        牙醫 / Web design
                     </h6>
                 </div>
                 <!-- 第二格圖片匡 -->
 
                 <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu7">
+                    <a href="#menu7">
+                        <img src="index/index-img-07.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">定存活動</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                        <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                            class="btn" data-bs-dismiss="modal">Close</button>
+                                    </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-07.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        定存活動 / Web design
                     </h6>
                 </div>
                 <!-- 第三格圖片匡 -->
 
                 <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu8">
+                    <a href="#menu8">
+                        <img src="index/index-img-09.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
+                                <h4 class="box-body">中信證券</h4>
+                                <span class="box-body">Web design</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
+
+                    <div class="modal fade" id="menu8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                        <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                            class="btn" data-bs-dismiss="modal">Close</button>
+                                    </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-09.jpg">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        中信証券 / Web design
                     </h6>
                 </div>
                 <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
-            </div>
-            <!-- 第二排 -->
-
-            <!-- 第三排 -->
-            <div class="row justify-content-center">
-                <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第一格圖片匡 -->
-
-                <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第二格圖片匡 -->
-
-                <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第三格圖片匡 -->
-
-                <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
-            </div>
-            <!-- 第三排 -->
         </section>
 
-        <section class="mb-5 mt-5" id="selection2">
-            <div class="d-flex justify-content-between">
-                <h6 class="title"><img class="icon-01 mr-2 mb-1" src="../0901/img/nav-icon-01.png" alt="">網頁設計</h6>
-                <h6 class="title">Web</h6>
-            </div>
+
+        <!-- 第二排測試 -->
+        <section class="mt-3" id="selection2">
+            <h5 class="text-center mt-5 mb-5"> </h5>
             <!-- 第一排 -->
             <div class="row justify-content-center">
                 <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
+                <div class="col-lg-6 box" data-bs-toggle="modal" data-bs-target="#menu1">
                     <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                        <img src="index/index-img-01.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
+                                <h4 class="box-body">18</h4>
                                 <span class="box-body">-----</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
+
+                    <div class="modal fade" id="menu1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-01.png">
+                        </div>
+                    </div>
                     <h6 class="d-block d-lg-none my-3">
                         m -----
                     </h6>
@@ -438,355 +340,273 @@
                 <!-- 第一格圖片匡 -->
 
                 <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
+                <div class="col-lg-6 box" data-bs-toggle="modal" data-bs-target="#menu2">
+                    <a href="#menu2">
+                        <img src="index/index-img-02.png" alt="" class="thumbnail">
                         <div class="box-hover-text">
                             <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
+                                <h4 class="box-body">18</h4>
                                 <span class="box-body">-----</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
+
+                    <div class="modal fade" id="menu2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                            <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                class="btn" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-02.png">
+                        </div>
+                    </div>
                     <h6 class="d-block d-lg-none my-3">
                         m -----
                     </h6>
                 </div>
                 <!-- 第二格圖片匡 -->
-
-                <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第三格圖片匡 -->
-
-                <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
             </div>
             <!-- 第一排 -->
-
-            <!-- 第二排 -->
-            <div class="row justify-content-center">
-                <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第一格圖片匡 -->
-
-                <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第二格圖片匡 -->
-
-                <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第三格圖片匡 -->
-
-                <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
-            </div>
-            <!-- 第二排 -->
-
-            <!-- 第三排 -->
-            <div class="row justify-content-center">
-                <!-- 第一格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第一格圖片匡 -->
-
-                <!-- 第二格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第二格圖片匡 -->
-
-                <!-- 第三格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第三格圖片匡 -->
-
-                <!-- 第四格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第四格圖片匡 -->
-
-                <!-- 第五格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第五格圖片匡 -->
-
-                <!-- 第六格圖片匡 -->
-                <div class="col-lg-2 box">
-                    <a href="#menu1">
-                        <img src="index/test.png" alt="" class="thumbnail">
-                        <div class="box-hover-text">
-                            <div class="text-center d-lg-block d-none">
-                                <h2 class="box-body">18</h2>
-                                <span class="box-body">-----</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#_" class="lightbox" id="menu1">
-                        <img src="index/test-01.png">
-                    </a>
-                    <h6 class="d-block d-lg-none my-3">
-                        m -----
-                    </h6>
-                </div>
-                <!-- 第六格圖片匡 -->
-            </div>
-            <!-- 第三排 -->
         </section>
+
+
+        <!-- 第三排測試 -->
+        <section id="selection3">
+            <h4 class="mt-5 mb-5 text-center"> </h4>
+            <!-- 第一排 -->
+            <div class="row justify-content-center">
+                <!-- 第一格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu11">
+                    <a href="#men11">
+                        <img src="index/index-img-12.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">ACH IN</h4>
+                                <span class="box-body">Web design
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-12.jpg">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        ACH IN / Web design
+                    </h6>
+                </div>
+                <!-- 第一格圖片匡 -->
+
+                <!-- 第二格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu2">
+                    <a href="#menu2">
+                        <img src="index/index-img-02.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">大戶翁</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-02.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        大戶翁 / Web design
+                    </h6>
+                </div>
+                <!-- 第二格圖片匡 -->
+
+                <!-- 第三格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu3">
+                    <a href="#menu3">
+                        <img src="index/index-img-03.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">DA神預測</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-03.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        DA神預測 / Web design
+                    </h6>
+                </div>
+                <!-- 第三格圖片匡 -->
+
+                <!-- 第四格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu4">
+                    <a href="#menu4">
+                        <img src="index/index-img-04.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">車貸聯絡頁</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-04.png">
+                            <img class="img1 mt-2" src="index/web-04-1.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        車貸聯絡頁 / Web design
+                    </h6>
+                </div>
+                <!-- 第四格圖片匡 -->
+            </div>
+            <!-- 第一排 -->
+
+            <!-- 第二排 -->
+            <div class="row justify-content-center">
+                <!-- 第一格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu5">
+                    <a href="#menu5">
+                        <img src="index/index-img-05.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">基金</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-05.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        基金 / Web design
+                    </h6>
+                </div>
+                <!-- 第一格圖片匡 -->
+
+                <!-- 第二格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu6">
+                    <a href="#menu6">
+                        <img src="index/index-img-10.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">牙醫</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                                    <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                        class="btn" data-bs-dismiss="modal">Close</button>
+                                                </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-10.jpg">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        牙醫 / Web design
+                    </h6>
+                </div>
+                <!-- 第二格圖片匡 -->
+
+                <!-- 第三格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu7">
+                    <a href="#menu7">
+                        <img src="index/index-img-07.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">定存活動</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                                <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                    class="btn" data-bs-dismiss="modal">Close</button>
+                                            </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-07.png">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        定存活動 / Web design
+                    </h6>
+                </div>
+                <!-- 第三格圖片匡 -->
+
+                <!-- 第四格圖片匡 -->
+                <div class="col-lg-3 col-6 box" data-bs-toggle="modal" data-bs-target="#menu8">
+                    <a href="#menu8">
+                        <img src="index/index-img-09.png" alt="" class="thumbnail">
+                        <div class="box-hover-text">
+                            <div class="text-center d-lg-block d-none">
+                                <h4 class="box-body">中信證券</h4>
+                                <span class="box-body">Web design</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="modal fade" id="menu8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <!-- <div class="modal-header">
+                                                <button style="position: absolute; right: 50px; top: 20px" type="button"
+                                                    class="btn" data-bs-dismiss="modal">Close</button>
+                                            </div> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <img class="img1" src="index/web-09.jpg">
+                        </div>
+                    </div>
+                    <h6 class="d-block d-lg-none my-3 ml-2">
+                        中信証券 / Web design
+                    </h6>
+                </div>
+                <!-- 第四格圖片匡 -->
+        </section>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -810,148 +630,21 @@
         });
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        // $('.link').click(function (e) {
-        //     e.preventDefault();
-        //     var target = $(this).attr('href');
-        //     var targetPos = $(target).offset().top;
-        //     $('html,body').animate({
-        //         scrollTop: targetPos - 50
-        //     }, 1000);
-        // });
-
-        // $('#myModal').on('shown.bs.modal', function () {
-        //     $('#myInput').trigger('focus')
-        // })
-
-        // $(".content").mouseover(function (event) {
-        //     var $this = $(this);
-        //     $this.find('.content-tooltip').removeClass("hide");
-        // });
-
-        // $(".content").mouseout(function () {
-        //     $(this).find('.content-tooltip').toggleClass("hide");
-        // });
-
-        // $(".nav-tabs li a").on('click', function () {
-        //     $(".nav-tabs-outer").toggleClass('show');
-        // });
-
-        // $(".navbar-toggler").on('click', function () {
-        //     $(".nav-tabs-outer").toggleClass('show');
-        // })
-
-        // $('.nav-tabs a').on('click', function () {
-        //     let link = $(this).attr('href')
-        //     $('#home').fadeOut(300);
-        //     $('.tab-pane').removeClass('active show');
-        //     $(link).addClass('active show')
-        // })
-
-        // $('.navbar-brand').on('click', function () {
-        //     $('.tab-pane').removeClass('active show');
-        //     $('#home').fadeIn(300)
-        // })
-
-        // function toogleFunction1(t) {
-        //     var temp = $(t);
-        //     clearT();
-        //     (temp.attr('class') == 'accordion-button') ? temp.css('background-color', '#ffe678') : temp.css('background-color', '#F8F5F3');
-        // }
-
-        // function toogleFunction2(t) {
-        //     var temp = $(t);
-        //     clearT();
-        //     (temp.attr('class') == 'accordion-button') ? temp.css('background-color', '#ffe678') : temp.css('background-color', '#F8F5F3');
-        // }
-
-        // function toogleFunction3(t) {
-        //     var temp = $(t);
-        //     clearT();
-        //     (temp.attr('class') == 'accordion-button') ? temp.css('background-color', '#ffe678') : temp.css('background-color', '#F8F5F3s');
-        // }
-
-        function clearT() {
-            var color = "#F8F5F3";
-            $("#t1").css('background-color', color);
-            $("#t2").css('background-color', color);
-            $("#t3").css('background-color', color);
-            $("#t4").css('background-color', color);
-        }
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            var targetPos = $(target).offset().top;
+            $('html,body').animate({ scrollTop: targetPos - 50 }, 1000);
+        });
     </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
 
-    <script>
-        class StickyNavigation {
-
-            constructor() {
-                this.currentId = null;
-                this.currentTab = null;
-                this.tabContainerHeight = 70;
-                let self = this;
-                $('.et-hero-tab').click(function () {
-                    self.onTabClick(event, $(this));
-                });
-                $(window).scroll(() => { this.onScroll(); });
-                $(window).resize(() => { this.onResize(); });
-            }
-
-            onTabClick(event, element) {
-                event.preventDefault();
-                let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-                $('html, body').animate({ scrollTop: scrollTop }, 600);
-            }
-
-            onScroll() {
-                this.checkTabContainerPosition();
-                this.findCurrentTabSelector();
-            }
-
-            onResize() {
-                if (this.currentId) {
-                    this.setSliderCss();
-                }
-            }
-
-            checkTabContainerPosition() {
-                let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
-                if ($(window).scrollTop() > offset) {
-                    $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
-                }
-                else {
-                    $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
-                }
-            }
-
-            findCurrentTabSelector(element) {
-                let newCurrentId;
-                let newCurrentTab;
-                let self = this;
-                $('.et-hero-tab').each(function () {
-                    let id = $(this).attr('href');
-                    let offsetTop = $(id).offset().top - self.tabContainerHeight;
-                    let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
-                    if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
-                        newCurrentId = id; newCurrentTab = $(this);
-                    }
-                }); if (this.currentId != newCurrentId || this.currentId === null) {
-                    this.currentId = newCurrentId;
-                    this.currentTab = newCurrentTab; this.setSliderCss();
-                }
-            } setSliderCss() {
-                let width = 0; let left = 0; if
-                    (this.currentTab) { width = this.currentTab.css('width'); left = this.currentTab.offset().left; }
-                $('.et-hero-tab-slider').css('width', width); $('.et-hero-tab-slider').css('left', left);
-            }
-        } new
-            StickyNavigation();
-    </script> -->
 </body>
 
 </html>
