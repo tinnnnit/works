@@ -1,7 +1,7 @@
 body {
     /* font-weight: lighter; */
     position: relative;
-    background-color: #ffffff;
+    background-color: #111111;
     font-family: "Century Gothic", 'Lato', sans-serif;
 }
 
@@ -151,6 +151,23 @@ li {
     list-style-type: none;
 }
 
+.navbar-brand {
+    color: rgba(255, 255, 255, 1)
+}
+
+.navbar-brand:hover{
+    color: rgba(255, 255, 255, 1)
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 1)
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 1)
+}
+
+
 @media (max-width: 990px) {
     li {
         position: relative;
@@ -166,7 +183,7 @@ li {
 
 @media (min-width:800px) {
     .navbar-brand {
-        width: 72%;
+        width: 72%
     }
 }
 
@@ -271,11 +288,12 @@ li {
 @media (max-width: 990px) {
     .navbar {
         padding: 0.5rem 0rem;
+        background-color: #111111;
     }
 }
 
 .navbar-light .navbar-toggler {
-    color: 00000;
+    color: #FFFFFF;
     border-color: transparent;
 }
 
@@ -425,7 +443,7 @@ span.box-body {
 }
 
 .box h6 {
-    color: #111111;
+    color: #FFFFFF;
     letter-spacing: 1px;
     font-size: 12px;
 }
@@ -509,4 +527,13 @@ tr:nth-child(odd){
 
 .title {
     font-size: 12px;
+}
+
+.navbar-toggler-icon {
+    background-image:url(index/icon.svg) ;
+}
+
+.modal-dialog {
+ max-width: 60%;
+ margin: 1.75rem auto;
 }
