@@ -537,3 +537,10 @@ tr:nth-child(odd){
  max-width: 60%;
  margin: 1.75rem auto;
 }
+
+@media (max-width: 990px) {
+    .modal-dialog {
+        max-width: 80%;
+        margin: 1.75rem auto;
+       }       
+}
