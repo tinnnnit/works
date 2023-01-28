@@ -2,7 +2,7 @@ body {
     /* font-weight: lighter; */
     position: relative;
     background-color: #111111;
-    font-family: "Century Gothic", 'Lato', sans-serif;
+    font-family: "Trebuchet MS", 'Lato', sans-serif;
 }
 
 .nav-icon-01, .nav-icon-02, .nav-icon-03, .nav-icon-04{
@@ -100,18 +100,6 @@ position: relative;
 background: #eee;
 text-align: center;
 padding: 0 2em;
-
-/* h1 {
-    font-size: 2rem;
-    margin: 0;
-    letter-spacing: 1rem;
-}
-
-h3 {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    opacity: 0.6;
-} */
 }
 
 .et-slide {
@@ -124,18 +112,6 @@ position: relativef;
 background: #eee;
 text-align: center;
 padding: 0 2em;
-
-/* h1 {
-    font-size: 2rem;
-    margin: 0;
-    letter-spacing: 1rem;
-} */
-
-/* h3 {
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    opacity: 0.6;
-} */
 }
 
 @media (max-width: 480px) {
@@ -152,21 +128,8 @@ li {
 }
 
 .navbar-brand {
-    color: rgba(255, 255, 255, 1)
+    color: rgba(180, 180, 180, 1)
 }
-
-.navbar-brand:hover{
-    color: rgba(255, 255, 255, 1)
-}
-
-.nav-link {
-    color: rgba(255, 255, 255, 1)
-}
-
-.nav-link:hover {
-    color: rgba(255, 255, 255, 1)
-}
-
 
 @media (max-width: 990px) {
     li {
@@ -396,14 +359,14 @@ li {
     }
 }
   
-.box .box-body {
+/* .box .box-body {
     letter-spacing: 1.5px;
-}
+} */
 
-h4.box-body {
+h3.box-body {
     color: #ffffff;
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 4px;
+    font-size: 24px;
 }
   
 span.box-body {
@@ -534,7 +497,7 @@ tr:nth-child(odd){
 }
 
 .modal-dialog {
- max-width: 60%;
+ max-width: 65%;
  margin: 1.75rem auto;
 }
 
