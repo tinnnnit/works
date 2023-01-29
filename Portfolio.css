@@ -127,10 +127,6 @@ li {
     list-style-type: none;
 }
 
-.navbar-brand {
-    color: rgba(180, 180, 180, 1)
-}
-
 @media (max-width: 990px) {
     li {
         position: relative;
@@ -358,14 +354,10 @@ li {
         background-color: transparent;
     }
 }
-  
-/* .box .box-body {
-    letter-spacing: 1.5px;
-} */
 
 h3.box-body {
     color: #ffffff;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 24px;
 }
   
@@ -490,6 +482,15 @@ tr:nth-child(odd){
 
 .title {
     font-size: 12px;
+}
+
+.navbar-brand {
+    color: rgba(180, 180, 180, 1);
+    letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+    color: rgba(180, 180, 180, 1)
 }
 
 .navbar-toggler-icon {
