@@ -485,12 +485,12 @@ tr:nth-child(odd){
 }
 
 .navbar-brand {
-    color: rgba(80, 80, 80, 1);
+    color: rgba(100, 100, 100, 1);
     letter-spacing: 2px;
 }
 
 .navbar-brand:hover {
-    color: rgba(80, 80, 80, 1)
+    color: rgba(100, 100, 100, 1)
 }
 
 .navbar-toggler-icon {
