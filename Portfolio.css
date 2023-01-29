@@ -1,7 +1,7 @@
 body {
     /* font-weight: lighter; */
     position: relative;
-    background-color: #111111;
+    background-color: #333333;
     font-family: "Trebuchet MS", 'Lato', sans-serif;
 }
 
@@ -485,12 +485,12 @@ tr:nth-child(odd){
 }
 
 .navbar-brand {
-    color: rgba(180, 180, 180, 1);
+    color: rgba(80, 80, 80, 1);
     letter-spacing: 2px;
 }
 
 .navbar-brand:hover {
-    color: rgba(180, 180, 180, 1)
+    color: rgba(80, 80, 80, 1)
 }
 
 .navbar-toggler-icon {
