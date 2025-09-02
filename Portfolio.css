@@ -1,143 +1,11 @@
-body {
-    /* font-weight: lighter; */
+/* ==========================================================================
+   1. General & Body Styles (全域 & Body 樣式)
+   ========================================================================== */
+   body {
     position: relative;
     background-color: #333333;
     font-family: "Trebuchet MS", 'Lato', sans-serif;
-}
-
-.nav-icon-01, .nav-icon-02, .nav-icon-03, .nav-icon-04{
-    max-width:55px;
-    margin-bottom: 0.5rem; 
-}
-
-.h {
-    margin-top: 86px;
-}
-
-.bgcolor {
-    background-color:#ffffff
-}
-
-.img {
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-
-.homeimage {
-    width: 60px;
-    height: 60px;
-
-}
-
-.nav-list {
-margin-top: 0.5rem;
-margin-bottom: 0.5rem;
-/* margin-left: 1rem; */
-margin-right: 1rem;
-}
-
-/* 動畫開始{
-.nav-link::after{
-content: '';
-width: 0%;
-position:absolute;
-border-bottom: 0.5px solid #000000;
-bottom: 0;
-left: 50%;
-transition: all 500ms ease;
-}
-.nav-link:hover:after{
-left: 0;
-width: 100%;
-} */
-   
-.nav-link{
-color: #000000;
-position: relative;
-}
-   
-.nav-link:hover{
-color: #000000;
-}
-/* 動畫結束 */
-
-/* 彈跳視窗 */
-.thumbnail {
-    max-width: 100%;
-    /* border: #FFFFFF solid 2px; */
-    transition: 0.7s;
-    /* border-radius: 0.6rem; */
-    /* box-shadow: 2px 7px 1px rgba(7, 29, 109, 0.5); */
-  }
-
-/** LIGHTBOX MARKUP **/
-.lightbox {
-      /** Default lightbox to hidden */
-      display: none;
-      /** Position and style */
-      position: fixed;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.8);
-      -webkit-transition: opacity .5s ease-in-out;
-      -moz-transition: opacity .5s ease-in-out;
-      -o-transition: opacity .5s ease-in-out;
-      transition: opacity .5s ease-in-out;
-  }
-  
-.lightbox img {
-/** Pad the lightbox image */
-      max-width: 100%;
-      max-height: 70%;
-      margin-top: 7rem;
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-  }
-  
-.lightbox:target {
-      /** Remove default browser outline */
-      outline: none;
-      opacity: 1;
-      /** Unhide lightbox **/
-      display: block;
-  }
-/** LIGHTBOX MARKUP **/
-
-.et-hero-tabs{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 20vh;
-position: relative;
-background: #eee;
-text-align: center;
-padding: 0 2em;
-}
-
-.et-slide {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100vh;
-position: relativef;
-background: #eee;
-text-align: center;
-padding: 0 2em;
-}
-
-@media (max-width: 480px) {
-    .nav-bar {
-        display: none;
-    }
+    /* font-weight: lighter; */
 }
 
 li {
@@ -149,42 +17,158 @@ li {
 
 @media (max-width: 990px) {
     li {
-        position: relative;
         text-align: center;
-        font-size: 14px;
-        list-style-type: none;
     }
 }
 
-/* .navbar-brand {
-    width: 100%;
-} */
+::-webkit-scrollbar {
+    background-color: transparent;
+}
 
-@media (min-width:800px) {
+
+/* ==========================================================================
+   2. Navigation & Header (導覽列 & 頁首)
+   ========================================================================== */
+.fixed-top {
+    /* box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.navbar-brand {
+    color: rgba(100, 100, 100, 1);
+    letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+    color: rgba(100, 100, 100, 1);
+}
+
+.nav-link {
+    color: #000000;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+.nav-list {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    /* margin-left: 1rem; */
+}
+
+.homeimage {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-light .navbar-toggler {
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url(index/icon.svg);
+}
+
+@media (max-width: 990px) {
+    .navbar {
+        padding: 0.5rem 0rem;
+    }
+}
+
+@media (min-width: 800px) {
     .navbar-brand {
-        width: 72%
+        width: 72%;
     }
 }
 
-/* .modal-content {
-    background: transparent;
-    border: transparent;
-} */
-/* 
-.modal {
-    background: rgba(0,0,0,0.5);
-} */
+
+/* ==========================================================================
+   3. Main Content & Portfolio Grid (主要內容 & 作品集網格)
+   ========================================================================== */
+.h {
+    padding-top: 62px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.box {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* width: 300px; */ /* 已註解，讓 Bootstrap 控制寬度 */
+}
+
+.thumbnail {
+    max-width: 100%;
+    transition: 0.7s;
+    /* border: #FFFFFF solid 2px; */
+    /* border-radius: 0.6rem; */
+    /* box-shadow: 2px 7px 1px rgba(7, 29, 109, 0.5); */
+}
+
+.box .box-hover-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box:hover .box-hover-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.box-body {
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+span.box-body {
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.box h6 {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+@media (max-width: 990px) {
+    .box {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        /* width: 500px; */ /* 已註解，讓 Bootstrap 控制寬度 */
+    }
+
+    .box .box-hover-text {
+        background-color: transparent;
+    }
+}
+
+
+/* ==========================================================================
+   4. Modal & Lightbox Styles (彈出視窗 & 燈箱)
+   ========================================================================== */
+.modal-dialog {
+    max-width: 65%;
+    margin: 1.75rem auto;
+}
 
 .modal-header {
     border: transparent;
-}
-
-.btn {
-    color: #ffffff;
-}
-
-.btn:hover {
-    color: #ffffff;
 }
 
 .modal-content span {
@@ -193,98 +177,60 @@ li {
     letter-spacing: 1px;
 }
 
-.nav-bar {
+.img1 {
+    max-width: 100%;
+    max-height: auto;
+}
+
+@media (max-width: 990px) {
+    .modal-dialog {
+        max-width: 80%;
+        margin: 1.75rem auto;
+    }
+}
+
+/* Custom Lightbox (Seems unused, kept for reference) */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity .5s ease-in-out;
 }
 
-.fixed-top {
-    box-shadow: 6px 3px 10px rgba(0, 0, 0, 0.2);
+.lightbox img {
+    max-width: 100%;
+    max-height: 70%;
+    margin-top: 7rem;
+    transition: .5s ease-in-out;
 }
 
-.link {
-    width: 120px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    background-color: transparent;
-    border: transparent;
-    transition-duration: 0.25s;
-    cursor: pointer;
+.lightbox:target {
+    outline: none;
+    opacity: 1;
+    display: block;
 }
 
-.nav-tabs {
-    border: transparent;
+
+/* ==========================================================================
+   5. Typography & Misc Elements (文字排版 & 其他元件)
+   ========================================================================== */
+.bgcolor {
+    background-color: #ffffff;
 }
 
-.nav-tabs li a {
-    font-size: 11.3px;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-    color: #000000;
+.img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.nav-tabs li {
-    margin-bottom: 1.2px;
-}
-
-@media (max-width: 990px) {
-    .nav-tabs li {
-        margin-bottom: 0px;
-    }
-}
-
-.nav-tabs li a:hover {
-    text-decoration: none;
-    color: #cccccc;
-}
-
-.nav-tabs-outer {
-    height: 0px;
-    overflow-y: scroll;
-    transition: .3s;
-}
-
-.nav-tabs-outer.show {
-    height: 430px;
-}
-
-@media (min-width:991px) {
-    .nav-tabs-outer {
-        height: 450px;
-        overflow-y: scroll;
-        transition: .3s;
-    }
-
-    .nav-tabs-outer.show {
-        height: 450px;
-        overflow-y: scroll;
-        transition: .3s;
-    }
-}
-
-/* .navbar {
-    justify-content: center;
-    padding: 0.4rem 1rem;
-    background-color: rgba(167, 167, 167, 0.7);
-} */
-
-@media (max-width: 990px) {
-    .navbar {
-        padding: 0.5rem 0rem;
-    }
-}
-
-.navbar-light .navbar-toggler {
-    color: #FFFFFF;
-    border-color: transparent;
-}
-
-.logo {
-    width: 210px;
-}
-
-.logo-mobile {
-    width: 130px;
-    cursor: pointer;
+.title {
+    font-size: 12px;
 }
 
 .caption {
@@ -304,132 +250,20 @@ li {
     background-color: #AEBABD;
 }
 
-.version span{
+.version span {
     color: #324853;
     background-color: rgba(190, 205, 209, 0.3);
-    /* border: 1px solid #324853; */
     border-radius: 2px;
-    padding:1px 10px;
+    padding: 1px 10px;
     font-size: 11.5px;
-}
-
-::-webkit-scrollbar {
-    background-color: transparent;
-}
-
-.box {
-    width: 300px;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-@media (max-width: 990px) {
-    .box {
-        width: 500px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-}
-
-.img1 {
-    max-width: 100%;
-    max-height: auto;
-}
-  
-/* .box:hover img {
-    transform: scale(1.1);
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-} */
-
-/* 
-@media (max-width: 990px) {
-    .box:hover img {
-        transform: scale(1);
-    }
-} */
-  
-.box:hover .box-hover-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.box .box-hover-text {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media (max-width: 990px) {
-    .box .box-hover-text {
-        background-color: transparent;
-    }
-}
-
-h3.box-body {
-    color: #ffffff;
-    letter-spacing: 3px;
-    font-size: 24px;
-}
-  
-span.box-body {
-      letter-spacing: 1px;
-      font-size: 10px;
-      color: #ffffff;
-}
-
-.about a {
-    background-color:transparent;
-    border: 1px solid #aebabd;
-    padding: 2px 13px;
-    color: #1d698f;
-    font-size: 12px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 2px;
-    transition-duration: 0.25s;
-}
-
-/* .about a:hover {
-    background-color: #aebabd;
-    border: 1px solid #aebabd;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    transition-duration: 0.4s;
-} */
-
-
-@media (max-width: 990px) {
-    .about {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.box h6 {
-    color: #FFFFFF;
-    letter-spacing: 1px;
-    font-size: 12px;
+    /* border: 1px solid #324853; */
 }
 
 .intro-work {
     font-size: 11.5px;
-    /* letter-spacing: 1px; */
     line-height: 22px;
     color: #324853;
+    /* letter-spacing: 1px; */
 }
 
 .intro-work span {
@@ -441,12 +275,6 @@ span.box-body {
     padding: 25px 15px 0px 15px;
 }
 
-@media (max-width: 990px) {
-    .e-work {
-        padding: 25px 20px 0px 20px;
-    }
-}
-
 .e-work h6 {
     color: #324853;
 }
@@ -456,28 +284,22 @@ span.box-body {
     font-size: 11.5px;
 }
 
-.about-img{
-    border-radius: 20%;
-}
-
 @media (max-width: 990px) {
-    .about-img{
-        max-width: 40%;
+    .e-work {
+        padding: 25px 20px 0px 20px;
     }
 }
 
+
+/* ==========================================================================
+   6. Table Styles (表格樣式)
+   ========================================================================== */
 .table tbody th {
     border-bottom: transparent;
     font-size: 12px;
     color: #324853;
     border-top: 1px solid #F8F5F3;
     padding: 15px 0px 15px 10px;
-}
-
-@media (max-width: 990px) {
-    .table tbody th {
-        font-size: 12px;
-    }
 }
 
 .table tbody td {
@@ -488,45 +310,78 @@ span.box-body {
     border-top: 1px solid #F8F5F3;
 }
 
+tr:nth-child(odd) {
+    background-color: rgba(190, 205, 209, 0.25);
+}
+
 @media (max-width: 990px) {
+    .table tbody th,
     .table tbody td {
         font-size: 12px;
     }
 }
 
-tr:nth-child(odd){
-	background-color: rgba(190, 205, 209, 0.25);
+
+/* ==========================================================================
+   7. Legacy or Unused Styles (舊樣式或未使用樣式)
+   ========================================================================== */
+.nav-icon-01,
+.nav-icon-02,
+.nav-icon-03,
+.nav-icon-04 {
+    max-width: 55px;
+    margin-bottom: 0.5rem;
+}
+
+.et-hero-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Fixed typo: 'relativef' */
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        display: none;
     }
-
-/* tr:nth-child(even){
-    background-color: rgba(228, 200, 200, 0.14);
-    } */
-
-.title {
-    font-size: 12px;
 }
 
-.navbar-brand {
-    color: rgba(100, 100, 100, 1);
-    letter-spacing: 2px;
+/* ==========================================================================
+   8. Dynamic Navbar on Scroll (滾動時的動態導覽列)
+   ========================================================================== */
+
+/* 滾動前的預設樣式 (實心背景) */
+.navbar.fixed-top {
+    background-color: #f8f9fa; /* 預設為 navbar 的淺灰色 */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 加上平滑的過渡動畫 */
+    box-shadow: none; /* 預設沒有陰影 */
 }
 
-.navbar-brand:hover {
-    color: rgba(100, 100, 100, 1)
-}
-
-.navbar-toggler-icon {
-    background-image:url(index/icon.svg) ;
-}
-
-.modal-dialog {
- max-width: 65%;
- margin: 1.75rem auto;
-}
-
-@media (max-width: 990px) {
-    .modal-dialog {
-        max-width: 80%;
-        margin: 1.75rem auto;
-       }       
+/* 滾動後的樣式 (半透明 + 毛玻璃 + 陰影) */
+.navbar.navbar-scrolled {
+    background-color: rgba(248, 249, 250, 0.85); /* 這是 bg-light 的顏色加上 85% 的不透明度 */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 滾動時加上一點陰影，更有立體感 */
 }
