@@ -7,35 +7,34 @@
 
     <title>Portfolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="Portfolio2.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         Navigation
-    ========================================== -->
+    <!-- =====================================================
+         FIXED HEADER
+    ====================================================== -->
 
     <header class="site-header">
 
-        <nav class="navbar fixed-top portfolio-navbar">
+        <nav class="portfolio-navbar">
 
             <div class="nav-inner">
 
-                <a class="site-logo" href="#">
+                <a href="#home"
+                   class="site-logo"
+                   id="homeLink">
                     Portfolio
                 </a>
 
                 <button
-                    class="about-link"
                     type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#aboutMeModal">
+                    class="about-link"
+                    id="aboutButton">
                     About me
                 </button>
 
@@ -46,378 +45,1004 @@
     </header>
 
 
-    <!-- =========================================
-         About Me
-    ========================================== -->
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
 
-    <div
-        class="modal fade about-modal"
-        id="aboutMeModal"
-        tabindex="-1"
-        aria-hidden="true">
+    <div class="about-overlay" id="aboutOverlay">
 
-        <div class="modal-dialog modal-dialog-centered">
+        <button
+            type="button"
+            class="overlay-close"
+            id="aboutClose">
+            ×
+        </button>
 
-            <div class="modal-content">
+        <div class="about-inner">
 
-                <div
-                    class="modal-body"
-                    data-bs-dismiss="modal">
-
-                    <img
-                        src="index/a-01.png"
-                        alt="關於我"
-                        class="about-image">
-
-                </div>
-
-            </div>
+            <img
+                src="index/a-01.png"
+                alt="關於我"
+                class="about-image">
 
         </div>
 
     </div>
 
 
-    <!-- =========================================
-         Portfolio
-    ========================================== -->
+    <!-- =====================================================
+         HOME / PORTFOLIO
+    ====================================================== -->
 
-    <main class="portfolio">
+    <main class="portfolio-page" id="home">
 
-        <div class="portfolio-grid">
+        <div class="portfolio-list">
 
 
-            <!-- =================================
-                 Work 01
-            ================================== -->
+            <!-- =================================================
+                 PROJECT 01
+            ================================================== -->
 
-            <article class="work-item">
+            <article
+                class="project-card"
+                data-project="project01">
 
                 <button
-                    class="work-link"
                     type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#menu1">
+                    class="project-link">
 
-                    <div class="work-image-wrap">
+                    <div class="project-image-wrap">
 
                         <img
                             src="index/index-01.png"
                             alt="UIUX 介面設計作品"
-                            class="work-image">
+                            class="project-image">
 
                     </div>
 
-                    <div class="work-info">
+                    <div class="project-meta">
 
-                        <h2>UIUX</h2>
+                        <div class="project-meta-top">
 
-                        <p>
+                            <span>01</span>
+
+                            <span>2024</span>
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h2>UIUX</h2>
+
+                            <p>
+                                介面設計、功能優化、設計系統管理
+                            </p>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <span>First Name Last Name</span>
+
+                            <span>UI / UX Design</span>
+
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT 02
+            ================================================== -->
+
+            <article
+                class="project-card"
+                data-project="project02">
+
+                <button
+                    type="button"
+                    class="project-link">
+
+                    <div class="project-image-wrap">
+
+                        <img
+                            src="index/index-02.png"
+                            alt="UIUX 流程設計作品"
+                            class="project-image">
+
+                    </div>
+
+                    <div class="project-meta">
+
+                        <div class="project-meta-top">
+
+                            <span>02</span>
+
+                            <span>2024</span>
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h2>UIUX</h2>
+
+                            <p>
+                                介面設計、流程規劃、設計系統管理
+                            </p>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <span>First Name Last Name</span>
+
+                            <span>Product Design</span>
+
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT 03
+            ================================================== -->
+
+            <article
+                class="project-card"
+                data-project="project03">
+
+                <button
+                    type="button"
+                    class="project-link">
+
+                    <div class="project-image-wrap">
+
+                        <img
+                            src="index/index-03.png"
+                            alt="網頁與視覺設計作品"
+                            class="project-image">
+
+                    </div>
+
+                    <div class="project-meta">
+
+                        <div class="project-meta-top">
+
+                            <span>03</span>
+
+                            <span>2023</span>
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h2>網頁、視覺設計</h2>
+
+                            <p>
+                                網頁規劃、活動網頁設計、視覺延伸
+                            </p>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <span>First Name Last Name</span>
+
+                            <span>Web / Visual Design</span>
+
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </article>
+
+
+            <!-- =================================================
+                 PROJECT 04
+            ================================================== -->
+
+            <article
+                class="project-card"
+                data-project="project04">
+
+                <button
+                    type="button"
+                    class="project-link">
+
+                    <div class="project-image-wrap">
+
+                        <img
+                            src="index/index-04.png"
+                            alt="品牌規範作品"
+                            class="project-image">
+
+                    </div>
+
+                    <div class="project-meta">
+
+                        <div class="project-meta-top">
+
+                            <span>04</span>
+
+                            <span>2023</span>
+
+                        </div>
+
+                        <div class="project-text">
+
+                            <h2>品牌規範</h2>
+
+                            <p>
+                                Brand Guidelines、品牌識別、視覺規範
+                            </p>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <span>First Name Last Name</span>
+
+                            <span>Brand Identity</span>
+
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer class="site-footer">
+
+            <div class="footer-top">
+
+                <p>
+                    Sign up to receive news and updates.
+                </p>
+
+                <form class="signup-form">
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        aria-label="Email Address">
+
+                    <button type="submit">
+                        Sign Up
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>Portfolio</span>
+
+                <span>© 2024</span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =====================================================
+         PROJECT DETAIL
+    ====================================================== -->
+
+    <main
+        class="project-detail"
+        id="projectDetail"
+        aria-hidden="true">
+
+        <div class="detail-container">
+
+            <!-- ---------------------------------------------
+                 DETAIL HEADER
+            ---------------------------------------------- -->
+
+            <div class="detail-header">
+
+                <button
+                    type="button"
+                    class="back-button"
+                    id="backButton">
+
+                    ← Back
+
+                </button>
+
+                <span
+                    class="detail-number"
+                    id="detailNumber">
+                    01
+                </span>
+
+            </div>
+
+
+            <!-- ---------------------------------------------
+                 DETAIL INTRO
+            ---------------------------------------------- -->
+
+            <section class="detail-intro">
+
+                <div class="detail-intro-left">
+
+                    <p class="detail-label">
+                        Project
+                    </p>
+
+                    <h1 id="detailTitle">
+                        UIUX
+                    </h1>
+
+                </div>
+
+
+                <div class="detail-intro-right">
+
+                    <div class="detail-description">
+
+                        <p id="detailDescription">
                             介面設計、功能優化、設計系統管理
                         </p>
 
                     </div>
 
-                </button>
 
-            </article>
+                    <div class="detail-data">
+
+                        <div>
+                            <span>Client</span>
+                            <strong id="detailClient">
+                                Sample Client
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Year</span>
+                            <strong id="detailYear">
+                                2024
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Role</span>
+                            <strong id="detailRole">
+                                UI / UX Designer
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
 
 
-            <!-- =================================
-                 Work 02
-            ================================== -->
+            <!-- ---------------------------------------------
+                 DETAIL CONTENT
+            ---------------------------------------------- -->
 
-            <article class="work-item">
+            <section class="detail-content">
+
+                <p class="detail-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <p class="detail-paragraph">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+
+            </section>
+
+
+            <!-- ---------------------------------------------
+                 PROJECT IMAGES
+            ---------------------------------------------- -->
+
+            <section
+                class="detail-gallery"
+                id="detailGallery">
+            </section>
+
+
+            <!-- ---------------------------------------------
+                 NEXT PROJECT
+            ---------------------------------------------- -->
+
+            <section class="next-project">
+
+                <p>
+                    Next Project
+                </p>
 
                 <button
-                    class="work-link"
                     type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#menu2">
+                    id="nextProjectButton">
 
-                    <div class="work-image-wrap">
+                    <span id="nextProjectNumber">
+                        02
+                    </span>
 
-                        <img
-                            src="index/index-02.png"
-                            alt="UIUX 流程設計作品"
-                            class="work-image">
+                    <span id="nextProjectTitle">
+                        UIUX
+                    </span>
 
-                    </div>
-
-                    <div class="work-info">
-
-                        <h2>UIUX</h2>
-
-                        <p>
-                            介面設計、流程規劃、設計系統管理
-                        </p>
-
-                    </div>
+                    <span>
+                        →
+                    </span>
 
                 </button>
 
-            </article>
+            </section>
 
 
-            <!-- =================================
-                 Work 03
-            ================================== -->
+            <!-- ---------------------------------------------
+                 DETAIL FOOTER
+            ---------------------------------------------- -->
 
-            <article class="work-item">
+            <footer class="detail-footer">
+
+                <span>Portfolio</span>
 
                 <button
-                    class="work-link"
                     type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#menu5">
-
-                    <div class="work-image-wrap">
-
-                        <img
-                            src="index/index-03.png"
-                            alt="網頁與視覺設計作品"
-                            class="work-image">
-
-                    </div>
-
-                    <div class="work-info">
-
-                        <h2>網頁、視覺設計</h2>
-
-                        <p>
-                            網頁規劃、活動網頁設計
-                        </p>
-
-                    </div>
-
+                    id="detailHomeButton">
+                    Back to top
                 </button>
 
-            </article>
-
-
-            <!-- =================================
-                 Work 04
-            ================================== -->
-
-            <article class="work-item">
-
-                <button
-                    class="work-link"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#menu6">
-
-                    <div class="work-image-wrap">
-
-                        <img
-                            src="index/index-04.png"
-                            alt="品牌規範作品"
-                            class="work-image">
-
-                    </div>
-
-                    <div class="work-info">
-
-                        <h2>品牌規範</h2>
-
-                        <p>
-                            Brand Guidelines
-                        </p>
-
-                    </div>
-
-                </button>
-
-            </article>
+            </footer>
 
         </div>
 
     </main>
 
 
-    <!-- =========================================
-         Modal 01
-    ========================================== -->
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
 
-    <div
-        class="modal fade work-modal"
-        id="menu1"
-        tabindex="-1"
-        aria-hidden="true">
+    <script>
 
-        <div class="modal-dialog modal-dialog-scrollable">
+        const projects = {
 
-            <div class="modal-content">
+            project01: {
 
-                <button
-                    type="button"
-                    class="modal-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                    ×
-                </button>
+                number: "01",
 
-                <div class="modal-body">
+                title: "UIUX",
 
-                    <img src="index/01.png" class="modal-image" alt="">
-                    <img src="index/02.png" class="modal-image" alt="">
-                    <img src="index/03.png" class="modal-image" alt="">
-                    <img src="index/04.png" class="modal-image" alt="">
-                    <img src="index/05.png" class="modal-image" alt="">
+                description:
+                    "介面設計、功能優化、設計系統管理",
 
-                </div>
+                client:
+                    "Sample Digital",
 
-            </div>
+                year:
+                    "2024",
 
-        </div>
+                role:
+                    "UI / UX Designer",
 
-    </div>
+                images: [
+                    "index/01.png",
+                    "index/02.png",
+                    "index/03.png",
+                    "index/04.png",
+                    "index/05.png"
+                ]
+
+            },
 
 
-    <!-- =========================================
-         Modal 02
-    ========================================== -->
+            project02: {
 
-    <div
-        class="modal fade work-modal"
-        id="menu2"
-        tabindex="-1"
-        aria-hidden="true">
+                number: "02",
 
-        <div class="modal-dialog modal-dialog-scrollable">
+                title: "UIUX",
 
-            <div class="modal-content">
+                description:
+                    "介面設計、流程規劃、設計系統管理",
 
-                <button
-                    type="button"
-                    class="modal-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                    ×
-                </button>
+                client:
+                    "Sample Technology",
 
-                <div class="modal-body">
+                year:
+                    "2024",
 
-                    <img src="index/18.png" class="modal-image" alt="">
-                    <img src="index/19.png" class="modal-image" alt="">
-                    <img src="index/21.png" class="modal-image" alt="">
-                    <img src="index/22.png" class="modal-image" alt="">
-                    <img src="index/23.png" class="modal-image" alt="">
+                role:
+                    "Product Designer",
 
-                </div>
+                images: [
+                    "index/18.png",
+                    "index/19.png",
+                    "index/21.png",
+                    "index/22.png",
+                    "index/23.png"
+                ]
 
-            </div>
-
-        </div>
-
-    </div>
+            },
 
 
-    <!-- =========================================
-         Modal 03
-    ========================================== -->
+            project03: {
 
-    <div
-        class="modal fade work-modal"
-        id="menu5"
-        tabindex="-1"
-        aria-hidden="true">
+                number: "03",
 
-        <div class="modal-dialog modal-dialog-scrollable">
+                title: "網頁、視覺設計",
 
-            <div class="modal-content">
+                description:
+                    "網頁規劃、活動網頁設計、視覺延伸",
 
-                <button
-                    type="button"
-                    class="modal-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                    ×
-                </button>
+                client:
+                    "Sample Brand",
 
-                <div class="modal-body">
+                year:
+                    "2023",
 
-                    <img src="index/06-1.png" class="modal-image" alt="">
-                    <img src="index/06.png" class="modal-image" alt="">
-                    <img src="index/07.png" class="modal-image" alt="">
-                    <img src="index/08.png" class="modal-image" alt="">
-                    <img src="index/09.png" class="modal-image" alt="">
-                    <img src="index/10.png" class="modal-image" alt="">
-                    <img src="index/11.png" class="modal-image" alt="">
-                    <img src="index/12.png" class="modal-image" alt="">
-                    <img src="index/13.png" class="modal-image" alt="">
-                    <img src="index/14.png" class="modal-image" alt="">
-                    <img src="index/15.png" class="modal-image" alt="">
-                    <img src="index/16.png" class="modal-image" alt="">
-                    <img src="index/17.png" class="modal-image" alt="">
+                role:
+                    "Web / Visual Designer",
 
-                </div>
+                images: [
+                    "index/06-1.png",
+                    "index/06.png",
+                    "index/07.png",
+                    "index/08.png",
+                    "index/09.png",
+                    "index/10.png",
+                    "index/11.png",
+                    "index/12.png",
+                    "index/13.png",
+                    "index/14.png",
+                    "index/15.png",
+                    "index/16.png",
+                    "index/17.png"
+                ]
 
-            </div>
-
-        </div>
-
-    </div>
+            },
 
 
-    <!-- =========================================
-         Modal 04
-    ========================================== -->
+            project04: {
 
-    <div
-        class="modal fade work-modal"
-        id="menu6"
-        tabindex="-1"
-        aria-hidden="true">
+                number: "04",
 
-        <div class="modal-dialog modal-dialog-scrollable">
+                title: "品牌規範",
 
-            <div class="modal-content">
+                description:
+                    "Brand Guidelines、品牌識別、視覺規範",
 
-                <button
-                    type="button"
-                    class="modal-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close">
-                    ×
-                </button>
+                client:
+                    "Sample Corporation",
 
-                <div class="modal-body">
+                year:
+                    "2023",
 
-                    <img src="index/b-1.png" class="modal-image" alt="">
-                    <img src="index/b-2.png" class="modal-image" alt="">
-                    <img src="index/b-3.png" class="modal-image" alt="">
-                    <img src="index/b-4.png" class="modal-image" alt="">
-                    <img src="index/b-5.png" class="modal-image" alt="">
-                    <img src="index/b-6.png" class="modal-image" alt="">
-                    <img src="index/b-7.png" class="modal-image" alt="">
-                    <img src="index/b-8.png" class="modal-image" alt="">
-                    <img src="index/b-9.png" class="modal-image" alt="">
-                    <img src="index/b-10.png" class="modal-image" alt="">
-                    <img src="index/b-11.png" class="modal-image" alt="">
-                    <img src="index/b-12.png" class="modal-image" alt="">
-                    <img src="index/b-13.png" class="modal-image" alt="">
-                    <img src="index/b-14.png" class="modal-image" alt="">
-                    <img src="index/b-15.png" class="modal-image" alt="">
-                    <img src="index/b-16.png" class="modal-image" alt="">
+                role:
+                    "Brand Designer",
 
-                </div>
+                images: [
+                    "index/b-1.png",
+                    "index/b-2.png",
+                    "index/b-3.png",
+                    "index/b-4.png",
+                    "index/b-5.png",
+                    "index/b-6.png",
+                    "index/b-7.png",
+                    "index/b-8.png",
+                    "index/b-9.png",
+                    "index/b-10.png",
+                    "index/b-11.png",
+                    "index/b-12.png",
+                    "index/b-13.png",
+                    "index/b-14.png",
+                    "index/b-15.png",
+                    "index/b-16.png"
+                ]
 
-            </div>
+            }
 
-        </div>
-
-    </div>
+        };
 
 
-    <!-- =========================================
-         Bootstrap JS
-    ========================================== -->
+        const projectOrder = [
+            "project01",
+            "project02",
+            "project03",
+            "project04"
+        ];
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
+
+        const portfolioPage =
+            document.querySelector(".portfolio-page");
+
+        const projectDetail =
+            document.querySelector(".project-detail");
+
+        const aboutOverlay =
+            document.querySelector("#aboutOverlay");
+
+        const detailNumber =
+            document.querySelector("#detailNumber");
+
+        const detailTitle =
+            document.querySelector("#detailTitle");
+
+        const detailDescription =
+            document.querySelector("#detailDescription");
+
+        const detailClient =
+            document.querySelector("#detailClient");
+
+        const detailYear =
+            document.querySelector("#detailYear");
+
+        const detailRole =
+            document.querySelector("#detailRole");
+
+        const detailGallery =
+            document.querySelector("#detailGallery");
+
+        const nextProjectNumber =
+            document.querySelector("#nextProjectNumber");
+
+        const nextProjectTitle =
+            document.querySelector("#nextProjectTitle");
+
+
+        let currentProject = null;
+
+
+        /* =====================================================
+           OPEN PROJECT
+        ====================================================== */
+
+        function openProject(projectId) {
+
+            const project = projects[projectId];
+
+            if (!project) {
+                return;
+            }
+
+            currentProject = projectId;
+
+
+            detailNumber.textContent =
+                project.number;
+
+            detailTitle.textContent =
+                project.title;
+
+            detailDescription.textContent =
+                project.description;
+
+            detailClient.textContent =
+                project.client;
+
+            detailYear.textContent =
+                project.year;
+
+            detailRole.textContent =
+                project.role;
+
+
+            /* Gallery */
+
+            detailGallery.innerHTML = "";
+
+            project.images.forEach(function(image) {
+
+                const imageElement =
+                    document.createElement("img");
+
+                imageElement.src =
+                    image;
+
+                imageElement.alt =
+                    project.title;
+
+                imageElement.className =
+                    "detail-image";
+
+                detailGallery.appendChild(
+                    imageElement
+                );
+
+            });
+
+
+            /* Next project */
+
+            const currentIndex =
+                projectOrder.indexOf(projectId);
+
+            const nextIndex =
+                (currentIndex + 1) %
+                projectOrder.length;
+
+            const nextProject =
+                projects[
+                    projectOrder[nextIndex]
+                ];
+
+            nextProjectNumber.textContent =
+                nextProject.number;
+
+            nextProjectTitle.textContent =
+                nextProject.title;
+
+
+            /* Show detail */
+
+            portfolioPage.classList.add(
+                "is-hidden"
+            );
+
+            projectDetail.classList.add(
+                "is-visible"
+            );
+
+            projectDetail.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+
+            document.body.classList.add(
+                "detail-open"
+            );
+
+
+            window.scrollTo({
+                top: 0,
+                behavior: "instant"
+            });
+
+        }
+
+
+        /* =====================================================
+           CLOSE PROJECT
+        ====================================================== */
+
+        function closeProject() {
+
+            projectDetail.classList.remove(
+                "is-visible"
+            );
+
+            portfolioPage.classList.remove(
+                "is-hidden"
+            );
+
+            projectDetail.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            document.body.classList.remove(
+                "detail-open"
+            );
+
+            window.scrollTo({
+                top: 0,
+                behavior: "instant"
+            });
+
+        }
+
+
+        /* =====================================================
+           PROJECT CLICK
+        ====================================================== */
+
+        document
+            .querySelectorAll(".project-card")
+            .forEach(function(card) {
+
+                card.addEventListener(
+                    "click",
+                    function() {
+
+                        const projectId =
+                            card.dataset.project;
+
+                        openProject(projectId);
+
+                    }
+                );
+
+            });
+
+
+        /* =====================================================
+           BACK
+        ====================================================== */
+
+        document
+            .querySelector("#backButton")
+            .addEventListener(
+                "click",
+                closeProject
+            );
+
+
+        /* =====================================================
+           NEXT PROJECT
+        ====================================================== */
+
+        document
+            .querySelector("#nextProjectButton")
+            .addEventListener(
+                "click",
+                function() {
+
+                    const currentIndex =
+                        projectOrder.indexOf(
+                            currentProject
+                        );
+
+                    const nextIndex =
+                        (currentIndex + 1) %
+                        projectOrder.length;
+
+                    openProject(
+                        projectOrder[nextIndex]
+                    );
+
+                }
+            );
+
+
+        /* =====================================================
+           HOME
+        ====================================================== */
+
+        document
+            .querySelector("#homeLink")
+            .addEventListener(
+                "click",
+                function(event) {
+
+                    event.preventDefault();
+
+                    closeProject();
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+
+                }
+            );
+
+
+        document
+            .querySelector("#detailHomeButton")
+            .addEventListener(
+                "click",
+                function() {
+
+                    closeProject();
+
+                }
+            );
+
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        document
+            .querySelector("#aboutButton")
+            .addEventListener(
+                "click",
+                function() {
+
+                    aboutOverlay.classList.add(
+                        "is-visible"
+                    );
+
+                }
+            );
+
+
+        document
+            .querySelector("#aboutClose")
+            .addEventListener(
+                "click",
+                function() {
+
+                    aboutOverlay.classList.remove(
+                        "is-visible"
+                    );
+
+                }
+            );
+
+
+        /* =====================================================
+           ESC
+        ====================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+
+                    if (
+                        aboutOverlay.classList.contains(
+                            "is-visible"
+                        )
+                    ) {
+
+                        aboutOverlay.classList.remove(
+                            "is-visible"
+                        );
+
+                    } else if (
+                        projectDetail.classList.contains(
+                            "is-visible"
+                        )
+                    ) {
+
+                        closeProject();
+
+                    }
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           SIGN UP
+        ====================================================== */
+
+        document
+            .querySelector(".signup-form")
+            .addEventListener(
+                "submit",
+                function(event) {
+
+                    event.preventDefault();
+
+                    alert(
+                        "Thank you!"
+                    );
+
+                }
+            );
+
     </script>
 
 </body>
