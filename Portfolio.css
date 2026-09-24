@@ -10,11 +10,16 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
+}
+
+body {
 
     background: #ffffff;
+
     color: #111111;
 
     font-family:
@@ -27,46 +32,75 @@ body {
     font-weight: 400;
 
     -webkit-font-smoothing: antialiased;
+
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font: inherit;
 }
 
 
 /* =========================================================
-   NAVIGATION
+   HEADER
 ========================================================= */
 
+.site-header {
+    position: relative;
+
+    z-index: 1000;
+}
+
+
 .portfolio-navbar {
+
     position: fixed;
+
     top: 0;
     left: 0;
 
     width: 100%;
 
-    padding: 24px 36px;
+    padding:
+        22px
+        36px;
 
-    background: rgba(255, 255, 255, 0.96);
+    background:
+        rgba(255, 255, 255, 0.96);
 
     z-index: 1000;
 
-    transition:
-        padding 0.3s ease,
-        background-color 0.3s ease;
+    border-bottom:
+        1px solid
+        rgba(0, 0, 0, 0.08);
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
 }
 
 
-/* Navbar 內容 */
-
 .nav-inner {
+
     width: 100%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 
-/* Logo */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .site-logo {
+
     display: inline-block;
 
     color: #111111;
@@ -74,96 +108,132 @@ body {
     text-decoration: none;
 
     font-size: 15px;
+
     line-height: 1;
 
     letter-spacing: 0.02em;
 
-    transition: opacity 0.25s ease;
+    transition:
+        opacity 0.25s ease;
 }
 
 .site-logo:hover {
+
     color: #111111;
-    opacity: 0.55;
+
+    opacity: 0.45;
 }
 
 
-/* About */
+/* =========================================================
+   ABOUT
+========================================================= */
 
 .about-link {
+
     border: 0;
+
     padding: 0;
+
+    margin: 0;
 
     background: transparent;
 
     color: #111111;
 
-    font-family: inherit;
     font-size: 15px;
+
     line-height: 1;
 
     letter-spacing: 0.02em;
 
     cursor: pointer;
 
-    transition: opacity 0.25s ease;
+    transition:
+        opacity 0.25s ease;
 }
 
 .about-link:hover {
-    opacity: 0.55;
+
+    opacity: 0.45;
 }
 
 
 /* =========================================================
-   PORTFOLIO
+   PORTFOLIO PAGE
 ========================================================= */
 
-.portfolio {
+.portfolio-page {
+
     width: 100%;
 
-    padding-top: 105px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+
+    background: #ffffff;
+
+    transition:
+        opacity 0.35s ease;
+}
+
+
+.portfolio-page.is-hidden {
+
+    display: none;
 }
 
 
 /* =========================================================
-   GRID
+   PORTFOLIO LIST
 ========================================================= */
 
-.portfolio-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    column-gap: 28px;
-    row-gap: 90px;
+.portfolio-list {
 
     width: 100%;
 
-    padding: 0 36px;
+    padding:
+        35px
+        36px
+        120px;
 }
 
 
 /* =========================================================
-   WORK ITEM
+   PROJECT CARD
 ========================================================= */
 
-.work-item {
+.project-card {
+
     width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
 }
 
 
-/* 整張作品可點擊 */
+.project-card + .project-card {
 
-.work-link {
+    margin-top: 120px;
+}
+
+
+/* =========================================================
+   PROJECT BUTTON
+========================================================= */
+
+.project-link {
 
     display: block;
 
     width: 100%;
 
-    padding: 0;
-
     margin: 0;
+
+    padding: 0;
 
     border: 0;
 
@@ -178,10 +248,10 @@ body {
 
 
 /* =========================================================
-   IMAGE
+   PROJECT IMAGE
 ========================================================= */
 
-.work-image-wrap {
+.project-image-wrap {
 
     width: 100%;
 
@@ -191,134 +261,227 @@ body {
 }
 
 
-.work-image {
+.project-image {
 
     display: block;
 
     width: 100%;
+
     height: auto;
 
+    transform:
+        scale(1);
+
     transition:
-        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-        opacity 0.4s ease;
+        transform
+        1s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        ),
+
+        opacity
+        0.5s
+        ease;
 }
 
 
-/* Hover */
+.project-link:hover
+.project-image {
 
-.work-link:hover .work-image {
-
-    transform: scale(1.025);
+    transform:
+        scale(1.015);
 
     opacity: 0.92;
 }
 
 
 /* =========================================================
-   WORK INFORMATION
+   PROJECT META
 ========================================================= */
 
-.work-info {
+.project-meta {
+
+    width: 100%;
 
     padding-top: 18px;
-
-    padding-right: 10px;
 }
 
 
-.work-info h2 {
+/* =========================================================
+   PROJECT META TOP
+========================================================= */
 
-    margin: 0 0 6px 0;
+.project-meta-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   PROJECT TEXT
+========================================================= */
+
+.project-text {
+
+    max-width: 850px;
+}
+
+
+.project-text h2 {
+
+    margin: 0 0 7px;
 
     color: #111111;
 
-    font-size: 16px;
+    font-size: 21px;
 
     font-weight: 400;
 
-    line-height: 1.35;
+    line-height: 1.25;
 
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
 }
 
 
-.work-info p {
+.project-text p {
 
     margin: 0;
 
     color: #777777;
 
-    font-size: 12px;
+    font-size: 13px;
 
     font-weight: 400;
 
-    line-height: 1.6;
+    line-height: 1.7;
+
+    letter-spacing: 0.01em;
+}
+
+
+/* =========================================================
+   PROJECT INFO
+========================================================= */
+
+.project-info {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 25px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
 
     letter-spacing: 0.02em;
 }
 
 
 /* =========================================================
-   MODAL
+   ABOUT OVERLAY
 ========================================================= */
 
-.work-modal {
-
-    background: #ffffff;
-}
-
-
-/* Bootstrap modal */
-
-.work-modal .modal-dialog {
-
-    width: 100%;
-
-    max-width: 100%;
-
-    height: 100vh;
-
-    margin: 0;
-
-    padding: 0;
-
-    display: flex;
-
-    align-items: flex-start;
-}
-
-
-.work-modal .modal-content {
-
-    width: 100%;
-
-    min-height: 100vh;
-
-    border: 0;
-
-    border-radius: 0;
-
-    background: #ffffff;
-
-    box-shadow: none;
-}
-
-
-/* =========================================================
-   MODAL CLOSE
-========================================================= */
-
-.modal-close {
+.about-overlay {
 
     position: fixed;
 
-    top: 25px;
+    inset: 0;
+
+    z-index: 2000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    background:
+        rgba(255, 255, 255, 0.97);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+.about-overlay.is-visible {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+.about-inner {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.about-image {
+
+    display: block;
+
+    width: auto;
+
+    max-width: 90vw;
+
+    max-height: 82vh;
+
+    object-fit: contain;
+}
+
+
+.overlay-close {
+
+    position: fixed;
+
+    top: 22px;
+
     right: 35px;
 
-    z-index: 1100;
+    z-index: 2100;
 
-    width: 36px;
-    height: 36px;
+    width: 35px;
+
+    height: 35px;
 
     padding: 0;
 
@@ -338,107 +501,701 @@ body {
 
     cursor: pointer;
 
-    transition: opacity 0.25s ease;
+    transition:
+        opacity 0.25s ease;
 }
 
 
-.modal-close:hover {
-    opacity: 0.45;
-}
+.overlay-close:hover {
 
-
-/* =========================================================
-   MODAL BODY
-========================================================= */
-
-.work-modal .modal-body {
-
-    width: 100%;
-
-    padding: 100px 8vw 100px;
-
-    overflow-x: hidden;
-
-    text-align: center;
-}
-
-
-/* Modal 裡面的作品圖 */
-
-.modal-image {
-
-    display: block;
-
-    width: 100%;
-
-    max-width: 1200px;
-
-    height: auto;
-
-    margin: 0 auto 35px auto;
-}
-
-
-/* 最後一張不要留空 */
-
-.modal-image:last-child {
-    margin-bottom: 0;
+    opacity: 0.4;
 }
 
 
 /* =========================================================
-   ABOUT MODAL
+   PROJECT DETAIL
 ========================================================= */
 
-.about-modal .modal-dialog {
+.project-detail {
 
-    max-width: 100%;
+    position: relative;
 
-    margin: 0;
+    width: 100%;
 
     min-height: 100vh;
+
+    background: #ffffff;
+
+    display: none;
+}
+
+
+.project-detail.is-visible {
+
+    display: block;
+}
+
+
+body.detail-open {
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   DETAIL CONTAINER
+========================================================= */
+
+.detail-container {
+
+    width: 100%;
+
+    padding:
+        100px
+        36px
+        0;
+}
+
+
+/* =========================================================
+   DETAIL HEADER
+========================================================= */
+
+.detail-header {
+
+    position: sticky;
+
+    top: 70px;
+
+    z-index: 50;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding:
+        16px
+        0;
+
+    background:
+        rgba(255, 255, 255, 0.94);
+
+    backdrop-filter:
+        blur(8px);
+
+    -webkit-backdrop-filter:
+        blur(8px);
 }
 
 
-.about-modal .modal-content {
-
-    border: 0;
-
-    border-radius: 0;
-
-    background: transparent;
-
-    box-shadow: none;
-}
-
-
-.about-modal .modal-body {
+.back-button {
 
     padding: 0;
 
-    text-align: center;
+    border: 0;
+
+    background: transparent;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.25s ease;
+}
+
+
+.back-button:hover {
+
+    opacity: 0.45;
+}
+
+
+.detail-number {
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   DETAIL INTRO
+========================================================= */
+
+.detail-intro {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 50px;
+
+    width: 100%;
+
+    padding:
+        100px
+        0
+        130px;
+}
+
+
+.detail-intro-left {
+
+    padding-right: 40px;
+}
+
+
+.detail-label {
+
+    margin: 0 0 25px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+}
+
+
+.detail-intro h1 {
+
+    margin: 0;
+
+    color: #111111;
+
+    font-size: clamp(
+        48px,
+        8vw,
+        120px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   DETAIL INTRO RIGHT
+========================================================= */
+
+.detail-intro-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding-bottom: 5px;
+}
+
+
+.detail-description {
+
+    max-width: 620px;
+
+    margin-bottom: 55px;
+}
+
+
+.detail-description p {
+
+    margin: 0;
+
+    color: #111111;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   DETAIL DATA
+========================================================= */
+
+.detail-data {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    border-top:
+        1px solid
+        #dddddd;
+
+    padding-top: 17px;
+}
+
+
+.detail-data div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.detail-data span {
+
+    color: #777777;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+
+.detail-data strong {
+
+    color: #111111;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DETAIL CONTENT
+========================================================= */
+
+.detail-content {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 50px;
+
+    width: 100%;
+
+    padding:
+        0
+        0
+        100px;
+}
+
+
+.detail-paragraph {
+
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DETAIL GALLERY
+========================================================= */
+
+.detail-gallery {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.detail-image {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    margin: 0 0 45px;
+
+    background: #f4f4f4;
+}
+
+
+.detail-image:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   NEXT PROJECT
+========================================================= */
+
+.next-project {
+
+    width: 100%;
+
+    margin-top: 150px;
+
+    padding:
+        40px
+        0
+        140px;
+
+    border-top:
+        1px solid
+        #dddddd;
+}
+
+
+.next-project > p {
+
+    margin: 0 0 35px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+
+.next-project button {
+
+    display: grid;
+
+    grid-template-columns:
+        70px
+        1fr
+        30px;
+
+    align-items: center;
+
+    width: 100%;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #111111;
+
+    text-align: left;
 
     cursor: pointer;
 }
 
 
-.about-image {
+#nextProjectNumber {
 
-    display: block;
+    color: #777777;
 
-    width: auto;
+    font-size: 11px;
+}
 
-    max-width: 90vw;
 
-    max-height: 85vh;
+#nextProjectTitle {
 
-    margin: 0 auto;
+    font-size: clamp(
+        35px,
+        7vw,
+        100px
+    );
+
+    line-height: 1;
+
+    font-weight: 400;
+
+    letter-spacing: -0.03em;
+}
+
+
+.next-project button > span:last-child {
+
+    font-size: 24px;
+
+    text-align: right;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.next-project button:hover
+> span:last-child {
+
+    transform:
+        translateX(8px);
+}
+
+
+/* =========================================================
+   DETAIL FOOTER
+========================================================= */
+
+.detail-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding:
+        25px
+        0
+        35px;
+
+    border-top:
+        1px solid
+        #dddddd;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.detail-footer button {
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.detail-footer button:hover {
+
+    color: #111111;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    width: 100%;
+
+    margin-top: 80px;
+
+    border-top:
+        1px solid
+        #dddddd;
+}
+
+
+.footer-top {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 50px;
+
+    padding:
+        70px
+        0
+        90px;
+}
+
+
+.footer-top p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.signup-form {
+
+    display: flex;
+
+    width: 100%;
+
+    border-bottom:
+        1px solid
+        #111111;
+}
+
+
+.signup-form input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding:
+        0
+        0
+        12px;
+
+    border: 0;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111111;
+
+    font-size: 13px;
+}
+
+
+.signup-form input::placeholder {
+
+    color: #888888;
+}
+
+
+.signup-form button {
+
+    padding:
+        0
+        0
+        12px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+.footer-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        25px
+        0
+        35px;
+
+    border-top:
+        1px solid
+        #dddddd;
+
+    color: #777777;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .portfolio-list {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .project-card + .project-card {
+
+        margin-top: 90px;
+    }
+
+
+    .detail-container {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+    }
+
+
+    .detail-intro {
+
+        gap: 35px;
+    }
+
+
+    .detail-content {
+
+        gap: 35px;
+    }
+
+
+    .footer-top {
+
+        gap: 35px;
+    }
+
 }
 
 
@@ -448,13 +1205,12 @@ body {
 
 @media (max-width: 767px) {
 
-    /* Navbar */
+    /* Header */
 
     .portfolio-navbar {
 
-        padding: 20px 20px;
-
-        background: rgba(255, 255, 255, 0.96);
+        padding:
+            20px;
     }
 
 
@@ -467,71 +1223,75 @@ body {
 
     /* Portfolio */
 
-    .portfolio {
+    .portfolio-page {
 
-        padding-top: 82px;
-        padding-bottom: 60px;
+        padding-top: 80px;
     }
 
 
-    /* 一欄 */
+    .portfolio-list {
 
-    .portfolio-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 65px;
-
-        padding: 0 20px;
+        padding:
+            25px
+            20px
+            80px;
     }
 
 
-    /* Work */
+    .project-card + .project-card {
 
-    .work-info {
-
-        padding-top: 14px;
+        margin-top: 75px;
     }
 
 
-    .work-info h2 {
+    .project-meta {
 
-        font-size: 15px;
-
-        margin-bottom: 5px;
+        padding-top: 15px;
     }
 
 
-    .work-info p {
+    .project-meta-top {
+
+        margin-bottom: 17px;
+
+        font-size: 10px;
+    }
+
+
+    .project-text h2 {
+
+        font-size: 17px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .project-text p {
 
         font-size: 11px;
+
+        line-height: 1.65;
     }
 
 
-    /* Modal */
+    .project-info {
 
-    .work-modal .modal-body {
+        margin-top: 18px;
 
-        padding: 75px 15px 60px;
-    }
+        gap: 20px;
 
-
-    .modal-image {
-
-        margin-bottom: 15px;
-    }
-
-
-    .modal-close {
-
-        top: 18px;
-        right: 18px;
-
-        font-size: 28px;
+        font-size: 10px;
     }
 
 
     /* About */
+
+    .about-overlay {
+
+        padding:
+            20px;
+    }
+
 
     .about-image {
 
@@ -539,6 +1299,195 @@ body {
 
         max-height: 80vh;
     }
+
+
+    .overlay-close {
+
+        top: 18px;
+
+        right: 18px;
+
+        font-size: 28px;
+    }
+
+
+    /* Detail */
+
+    .detail-container {
+
+        padding:
+            80px
+            20px
+            0;
+    }
+
+
+    .detail-header {
+
+        top: 64px;
+
+        padding:
+            15px
+            0;
+    }
+
+
+    .back-button {
+
+        font-size: 12px;
+    }
+
+
+    .detail-intro {
+
+        display: block;
+
+        padding:
+            65px
+            0
+            80px;
+    }
+
+
+    .detail-intro-left {
+
+        padding-right: 0;
+
+        margin-bottom: 60px;
+    }
+
+
+    .detail-label {
+
+        margin-bottom: 20px;
+    }
+
+
+    .detail-intro h1 {
+
+        font-size: 58px;
+    }
+
+
+    .detail-description {
+
+        margin-bottom: 45px;
+    }
+
+
+    .detail-description p {
+
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+
+    .detail-data {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .detail-data strong {
+
+        font-size: 11px;
+    }
+
+
+    /* Detail content */
+
+    .detail-content {
+
+        display: block;
+
+        padding-bottom: 65px;
+    }
+
+
+    .detail-paragraph {
+
+        max-width: none;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Images */
+
+    .detail-image {
+
+        margin-bottom: 15px;
+    }
+
+
+    /* Next */
+
+    .next-project {
+
+        margin-top: 80px;
+
+        padding:
+            30px
+            0
+            90px;
+    }
+
+
+    .next-project > p {
+
+        margin-bottom: 25px;
+    }
+
+
+    .next-project button {
+
+        grid-template-columns:
+            45px
+            1fr
+            20px;
+    }
+
+
+    #nextProjectTitle {
+
+        font-size: 42px;
+    }
+
+
+    /* Footer */
+
+    .footer-top {
+
+        display: block;
+
+        padding:
+            50px
+            0
+            65px;
+    }
+
+
+    .footer-top p {
+
+        margin-bottom: 40px;
+
+        font-size: 13px;
+    }
+
+
+    .detail-footer {
+
+        padding-bottom: 25px;
+    }
+
 }
 
 
@@ -548,37 +1497,86 @@ body {
 
 @media (max-width: 480px) {
 
-    .portfolio-grid {
+    .portfolio-list {
 
-        padding: 0 15px;
+        padding-left: 15px;
 
-        gap: 50px;
+        padding-right: 15px;
     }
 
 
-    .portfolio {
+    .project-card + .project-card {
 
-        padding-top: 78px;
+        margin-top: 60px;
     }
 
 
-    .work-info h2 {
+    .project-info {
 
-        font-size: 14px;
+        flex-direction: column;
+
+        gap: 5px;
     }
 
 
-    .work-info p {
+    .detail-container {
 
-        font-size: 10px;
+        padding-left: 15px;
+
+        padding-right: 15px;
     }
 
 
-    .work-modal .modal-body {
+    .detail-intro h1 {
 
-        padding-left: 10px;
-        padding-right: 10px;
+        font-size: 48px;
     }
+
+
+    .detail-data {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 18px;
+    }
+
+
+    .detail-data div {
+
+        display: grid;
+
+        grid-template-columns:
+            80px
+            1fr;
+
+        gap: 10px;
+    }
+
+
+    #nextProjectTitle {
+
+        font-size: 35px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.project-link:focus-visible,
+.about-link:focus-visible,
+.back-button:focus-visible,
+.next-project button:focus-visible,
+.site-logo:focus-visible {
+
+    outline:
+        1px solid
+        #111111;
+
+    outline-offset: 5px;
 }
 
 
@@ -589,13 +1587,20 @@ body {
 @media (prefers-reduced-motion: reduce) {
 
     html {
+
         scroll-behavior: auto;
     }
 
-    .work-image,
-    .site-logo,
-    .about-link,
-    .modal-close {
-        transition: none;
+
+    *,
+    *::before,
+    *::after {
+
+        transition:
+            none !important;
+
+        animation:
+            none !important;
     }
+
 }
