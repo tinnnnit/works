@@ -2,1049 +2,1069 @@
 <html lang="zh-Hant">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio</title>
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="Portfolio2.css">
 
-    <link rel="stylesheet" href="Portfolio2.css">
 </head>
+
 
 <body>
 
-    <!-- =====================================================
-         FIXED HEADER
-    ====================================================== -->
 
-    <header class="site-header">
+<!-- =====================================================
+     HEADER
+====================================================== -->
 
-        <nav class="portfolio-navbar">
+<header class="site-header">
 
-            <div class="nav-inner">
+    <div class="header-inner">
 
-                <a href="#home"
-                   class="site-logo"
-                   id="homeLink">
-                    Portfolio
-                </a>
+        <a
+            href="#"
+            class="logo"
+            id="logo">
+            Portfolio
+        </a>
 
-                <button
-                    type="button"
-                    class="about-link"
-                    id="aboutButton">
-                    About me
-                </button>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
-
-    <div class="about-overlay" id="aboutOverlay">
 
         <button
-            type="button"
-            class="overlay-close"
-            id="aboutClose">
-            ×
+            class="about-button"
+            id="aboutButton"
+            type="button">
+            About me
         </button>
-
-        <div class="about-inner">
-
-            <img
-                src="index/a-01.png"
-                alt="關於我"
-                class="about-image">
-
-        </div>
 
     </div>
 
+</header>
 
-    <!-- =====================================================
-         HOME / PORTFOLIO
-    ====================================================== -->
 
-    <main class="portfolio-page" id="home">
 
-        <div class="portfolio-list">
+<!-- =====================================================
+     ABOUT
+====================================================== -->
 
+<div
+    class="about-panel"
+    id="aboutPanel">
 
-            <!-- =================================================
-                 PROJECT 01
-            ================================================== -->
+    <button
+        class="about-close"
+        id="aboutClose"
+        type="button">
+        ×
+    </button>
 
-            <article
-                class="project-card"
-                data-project="project01">
 
-                <button
-                    type="button"
-                    class="project-link">
+    <div class="about-content">
 
-                    <div class="project-image-wrap">
+        <img
+            src="index/a-01.png"
+            alt="About me">
 
-                        <img
-                            src="index/index-01.png"
-                            alt="UIUX 介面設計作品"
-                            class="project-image">
+    </div>
 
-                    </div>
+</div>
 
-                    <div class="project-meta">
 
-                        <div class="project-meta-top">
 
-                            <span>01</span>
+<!-- =====================================================
+     HOME
+====================================================== -->
 
-                            <span>2024</span>
+<main
+    class="home-page"
+    id="homePage">
 
-                        </div>
 
-                        <div class="project-text">
+    <section class="project-list">
 
-                            <h2>UIUX</h2>
 
-                            <p>
-                                介面設計、功能優化、設計系統管理
-                            </p>
+        <!-- =================================================
+             PROJECT 01
+        ================================================== -->
 
-                        </div>
+        <article
+            class="project"
+            data-project="project01">
 
-                        <div class="project-info">
 
-                            <span>First Name Last Name</span>
+            <div class="project-header">
 
-                            <span>UI / UX Design</span>
+                <div class="project-meta">
 
-                        </div>
-
-                    </div>
-
-                </button>
-
-            </article>
-
-
-            <!-- =================================================
-                 PROJECT 02
-            ================================================== -->
-
-            <article
-                class="project-card"
-                data-project="project02">
-
-                <button
-                    type="button"
-                    class="project-link">
-
-                    <div class="project-image-wrap">
-
-                        <img
-                            src="index/index-02.png"
-                            alt="UIUX 流程設計作品"
-                            class="project-image">
-
-                    </div>
-
-                    <div class="project-meta">
-
-                        <div class="project-meta-top">
-
-                            <span>02</span>
-
-                            <span>2024</span>
-
-                        </div>
-
-                        <div class="project-text">
-
-                            <h2>UIUX</h2>
-
-                            <p>
-                                介面設計、流程規劃、設計系統管理
-                            </p>
-
-                        </div>
-
-                        <div class="project-info">
-
-                            <span>First Name Last Name</span>
-
-                            <span>Product Design</span>
-
-                        </div>
-
-                    </div>
-
-                </button>
-
-            </article>
-
-
-            <!-- =================================================
-                 PROJECT 03
-            ================================================== -->
-
-            <article
-                class="project-card"
-                data-project="project03">
-
-                <button
-                    type="button"
-                    class="project-link">
-
-                    <div class="project-image-wrap">
-
-                        <img
-                            src="index/index-03.png"
-                            alt="網頁與視覺設計作品"
-                            class="project-image">
-
-                    </div>
-
-                    <div class="project-meta">
-
-                        <div class="project-meta-top">
-
-                            <span>03</span>
-
-                            <span>2023</span>
-
-                        </div>
-
-                        <div class="project-text">
-
-                            <h2>網頁、視覺設計</h2>
-
-                            <p>
-                                網頁規劃、活動網頁設計、視覺延伸
-                            </p>
-
-                        </div>
-
-                        <div class="project-info">
-
-                            <span>First Name Last Name</span>
-
-                            <span>Web / Visual Design</span>
-
-                        </div>
-
-                    </div>
-
-                </button>
-
-            </article>
-
-
-            <!-- =================================================
-                 PROJECT 04
-            ================================================== -->
-
-            <article
-                class="project-card"
-                data-project="project04">
-
-                <button
-                    type="button"
-                    class="project-link">
-
-                    <div class="project-image-wrap">
-
-                        <img
-                            src="index/index-04.png"
-                            alt="品牌規範作品"
-                            class="project-image">
-
-                    </div>
-
-                    <div class="project-meta">
-
-                        <div class="project-meta-top">
-
-                            <span>04</span>
-
-                            <span>2023</span>
-
-                        </div>
-
-                        <div class="project-text">
-
-                            <h2>品牌規範</h2>
-
-                            <p>
-                                Brand Guidelines、品牌識別、視覺規範
-                            </p>
-
-                        </div>
-
-                        <div class="project-info">
-
-                            <span>First Name Last Name</span>
-
-                            <span>Brand Identity</span>
-
-                        </div>
-
-                    </div>
-
-                </button>
-
-            </article>
-
-
-        </div>
-
-
-        <!-- =====================================================
-             FOOTER
-        ====================================================== -->
-
-        <footer class="site-footer">
-
-            <div class="footer-top">
-
-                <p>
-                    Sign up to receive news and updates.
-                </p>
-
-                <form class="signup-form">
-
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        aria-label="Email Address">
-
-                    <button type="submit">
-                        Sign Up
-                    </button>
-
-                </form>
-
-            </div>
-
-            <div class="footer-bottom">
-
-                <span>Portfolio</span>
-
-                <span>© 2024</span>
-
-            </div>
-
-        </footer>
-
-    </main>
-
-
-    <!-- =====================================================
-         PROJECT DETAIL
-    ====================================================== -->
-
-    <main
-        class="project-detail"
-        id="projectDetail"
-        aria-hidden="true">
-
-        <div class="detail-container">
-
-            <!-- ---------------------------------------------
-                 DETAIL HEADER
-            ---------------------------------------------- -->
-
-            <div class="detail-header">
-
-                <button
-                    type="button"
-                    class="back-button"
-                    id="backButton">
-
-                    ← Back
-
-                </button>
-
-                <span
-                    class="detail-number"
-                    id="detailNumber">
-                    01
-                </span>
-
-            </div>
-
-
-            <!-- ---------------------------------------------
-                 DETAIL INTRO
-            ---------------------------------------------- -->
-
-            <section class="detail-intro">
-
-                <div class="detail-intro-left">
-
-                    <p class="detail-label">
-                        Project
-                    </p>
-
-                    <h1 id="detailTitle">
-                        UIUX
-                    </h1>
-
-                </div>
-
-
-                <div class="detail-intro-right">
-
-                    <div class="detail-description">
-
-                        <p id="detailDescription">
-                            介面設計、功能優化、設計系統管理
-                        </p>
-
-                    </div>
-
-
-                    <div class="detail-data">
-
-                        <div>
-                            <span>Client</span>
-                            <strong id="detailClient">
-                                Sample Client
-                            </strong>
-                        </div>
-
-                        <div>
-                            <span>Year</span>
-                            <strong id="detailYear">
-                                2024
-                            </strong>
-                        </div>
-
-                        <div>
-                            <span>Role</span>
-                            <strong id="detailRole">
-                                UI / UX Designer
-                            </strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- ---------------------------------------------
-                 DETAIL CONTENT
-            ---------------------------------------------- -->
-
-            <section class="detail-content">
-
-                <p class="detail-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-
-                <p class="detail-paragraph">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
-
-            </section>
-
-
-            <!-- ---------------------------------------------
-                 PROJECT IMAGES
-            ---------------------------------------------- -->
-
-            <section
-                class="detail-gallery"
-                id="detailGallery">
-            </section>
-
-
-            <!-- ---------------------------------------------
-                 NEXT PROJECT
-            ---------------------------------------------- -->
-
-            <section class="next-project">
-
-                <p>
-                    Next Project
-                </p>
-
-                <button
-                    type="button"
-                    id="nextProjectButton">
-
-                    <span id="nextProjectNumber">
-                        02
-                    </span>
-
-                    <span id="nextProjectTitle">
-                        UIUX
+                    <span>
+                        First Name Last Name
                     </span>
 
                     <span>
-                        →
+                        2024
                     </span>
 
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="index/index-01.png"
+                        alt="UIUX">
+
+                </div>
+
+
+                <div class="project-copy">
+
+                    <h2>
+                        UIUX
+                    </h2>
+
+
+                    <p>
+                        介面設計、功能優化、設計系統管理
+                    </p>
+
+
+                    <button
+                        class="read-more"
+                        type="button">
+
+                        Read More
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 02
+        ================================================== -->
+
+        <article
+            class="project"
+            data-project="project02">
+
+
+            <div class="project-header">
+
+                <div class="project-meta">
+
+                    <span>
+                        First Name Last Name
+                    </span>
+
+                    <span>
+                        2024
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="index/index-02.png"
+                        alt="UIUX">
+
+                </div>
+
+
+                <div class="project-copy">
+
+                    <h2>
+                        UIUX
+                    </h2>
+
+
+                    <p>
+                        介面設計、流程規劃、設計系統管理
+                    </p>
+
+
+                    <button
+                        class="read-more"
+                        type="button">
+
+                        Read More
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 03
+        ================================================== -->
+
+        <article
+            class="project"
+            data-project="project03">
+
+
+            <div class="project-header">
+
+                <div class="project-meta">
+
+                    <span>
+                        First Name Last Name
+                    </span>
+
+                    <span>
+                        2023
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="index/index-03.png"
+                        alt="網頁、視覺設計">
+
+                </div>
+
+
+                <div class="project-copy">
+
+                    <h2>
+                        網頁、視覺設計
+                    </h2>
+
+
+                    <p>
+                        網頁規劃、活動網頁設計、視覺延伸
+                    </p>
+
+
+                    <button
+                        class="read-more"
+                        type="button">
+
+                        Read More
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 04
+        ================================================== -->
+
+        <article
+            class="project"
+            data-project="project04">
+
+
+            <div class="project-header">
+
+                <div class="project-meta">
+
+                    <span>
+                        First Name Last Name
+                    </span>
+
+                    <span>
+                        2023
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="index/index-04.png"
+                        alt="品牌規範">
+
+                </div>
+
+
+                <div class="project-copy">
+
+                    <h2>
+                        品牌規範
+                    </h2>
+
+
+                    <p>
+                        Brand Guidelines、品牌識別、視覺規範
+                    </p>
+
+
+                    <button
+                        class="read-more"
+                        type="button">
+
+                        Read More
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-signup">
+
+            <p>
+                Sign up to receive news and updates.
+            </p>
+
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Email Address">
+
+                <button type="submit">
+                    Sign Up
                 </button>
 
-            </section>
-
-
-            <!-- ---------------------------------------------
-                 DETAIL FOOTER
-            ---------------------------------------------- -->
-
-            <footer class="detail-footer">
-
-                <span>Portfolio</span>
-
-                <button
-                    type="button"
-                    id="detailHomeButton">
-                    Back to top
-                </button>
-
-            </footer>
+            </form>
 
         </div>
 
-    </main>
+
+        <div class="footer-bottom">
+
+            <span>
+                Portfolio
+            </span>
+
+            <span>
+                Made with love
+            </span>
+
+        </div>
+
+    </footer>
+
+</main>
 
 
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
 
-    <script>
+<!-- =====================================================
+     PROJECT DETAIL
+====================================================== -->
 
-        const projects = {
-
-            project01: {
-
-                number: "01",
-
-                title: "UIUX",
-
-                description:
-                    "介面設計、功能優化、設計系統管理",
-
-                client:
-                    "Sample Digital",
-
-                year:
-                    "2024",
-
-                role:
-                    "UI / UX Designer",
-
-                images: [
-                    "index/01.png",
-                    "index/02.png",
-                    "index/03.png",
-                    "index/04.png",
-                    "index/05.png"
-                ]
-
-            },
+<main
+    class="detail-page"
+    id="detailPage">
 
 
-            project02: {
-
-                number: "02",
-
-                title: "UIUX",
-
-                description:
-                    "介面設計、流程規劃、設計系統管理",
-
-                client:
-                    "Sample Technology",
-
-                year:
-                    "2024",
-
-                role:
-                    "Product Designer",
-
-                images: [
-                    "index/18.png",
-                    "index/19.png",
-                    "index/21.png",
-                    "index/22.png",
-                    "index/23.png"
-                ]
-
-            },
+    <div class="detail-inner">
 
 
-            project03: {
+        <!-- DETAIL TOP -->
 
-                number: "03",
+        <div class="detail-top">
 
-                title: "網頁、視覺設計",
+            <button
+                class="back-button"
+                id="backButton"
+                type="button">
 
-                description:
-                    "網頁規劃、活動網頁設計、視覺延伸",
+                ← Back
 
-                client:
-                    "Sample Brand",
-
-                year:
-                    "2023",
-
-                role:
-                    "Web / Visual Designer",
-
-                images: [
-                    "index/06-1.png",
-                    "index/06.png",
-                    "index/07.png",
-                    "index/08.png",
-                    "index/09.png",
-                    "index/10.png",
-                    "index/11.png",
-                    "index/12.png",
-                    "index/13.png",
-                    "index/14.png",
-                    "index/15.png",
-                    "index/16.png",
-                    "index/17.png"
-                ]
-
-            },
+            </button>
 
 
-            project04: {
+            <span
+                class="detail-date"
+                id="detailDate">
+                2024
+            </span>
 
-                number: "04",
-
-                title: "品牌規範",
-
-                description:
-                    "Brand Guidelines、品牌識別、視覺規範",
-
-                client:
-                    "Sample Corporation",
-
-                year:
-                    "2023",
-
-                role:
-                    "Brand Designer",
-
-                images: [
-                    "index/b-1.png",
-                    "index/b-2.png",
-                    "index/b-3.png",
-                    "index/b-4.png",
-                    "index/b-5.png",
-                    "index/b-6.png",
-                    "index/b-7.png",
-                    "index/b-8.png",
-                    "index/b-9.png",
-                    "index/b-10.png",
-                    "index/b-11.png",
-                    "index/b-12.png",
-                    "index/b-13.png",
-                    "index/b-14.png",
-                    "index/b-15.png",
-                    "index/b-16.png"
-                ]
-
-            }
-
-        };
+        </div>
 
 
-        const projectOrder = [
-            "project01",
-            "project02",
-            "project03",
-            "project04"
+
+        <!-- DETAIL TITLE -->
+
+        <div class="detail-title">
+
+            <p
+                class="detail-author"
+                id="detailAuthor">
+                First Name Last Name
+            </p>
+
+
+            <h1 id="detailTitle">
+                UIUX
+            </h1>
+
+
+            <p
+                class="detail-description"
+                id="detailDescription">
+
+                介面設計、功能優化、設計系統管理
+
+            </p>
+
+        </div>
+
+
+
+        <!-- DETAIL INFO -->
+
+        <div class="detail-info">
+
+            <div>
+
+                <span>
+                    Client
+                </span>
+
+                <p id="detailClient">
+                    Sample Client
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Role
+                </span>
+
+                <p id="detailRole">
+                    UI / UX Designer
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Year
+                </span>
+
+                <p id="detailYear">
+                    2024
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DETAIL TEXT -->
+
+        <div class="detail-text">
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </p>
+
+
+            <p>
+                Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea
+                commodo consequat.
+            </p>
+
+        </div>
+
+
+
+        <!-- DETAIL IMAGES -->
+
+        <div
+            class="detail-gallery"
+            id="detailGallery">
+        </div>
+
+
+
+        <!-- NEXT -->
+
+        <div class="next-project">
+
+            <span>
+                Next Project
+            </span>
+
+
+            <button
+                id="nextButton"
+                type="button">
+
+                <strong id="nextNumber">
+                    02
+                </strong>
+
+                <strong id="nextTitle">
+                    UIUX
+                </strong>
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<script>
+
+
+/* =====================================================
+   PROJECT DATA
+====================================================== */
+
+const projects = {
+
+    project01: {
+
+        number: "01",
+
+        title: "UIUX",
+
+        author: "First Name Last Name",
+
+        date: "2024",
+
+        description:
+            "介面設計、功能優化、設計系統管理",
+
+        client:
+            "Sample Client",
+
+        role:
+            "UI / UX Designer",
+
+        images: [
+            "index/01.png",
+            "index/02.png",
+            "index/03.png",
+            "index/04.png",
+            "index/05.png"
+        ]
+
+    },
+
+
+    project02: {
+
+        number: "02",
+
+        title: "UIUX",
+
+        author: "First Name Last Name",
+
+        date: "2024",
+
+        description:
+            "介面設計、流程規劃、設計系統管理",
+
+        client:
+            "Sample Technology",
+
+        role:
+            "Product Designer",
+
+        images: [
+            "index/18.png",
+            "index/19.png",
+            "index/21.png",
+            "index/22.png",
+            "index/23.png"
+        ]
+
+    },
+
+
+    project03: {
+
+        number: "03",
+
+        title: "網頁、視覺設計",
+
+        author: "First Name Last Name",
+
+        date: "2023",
+
+        description:
+            "網頁規劃、活動網頁設計、視覺延伸",
+
+        client:
+            "Sample Brand",
+
+        role:
+            "Web / Visual Designer",
+
+        images: [
+            "index/06-1.png",
+            "index/06.png",
+            "index/07.png",
+            "index/08.png",
+            "index/09.png",
+            "index/10.png",
+            "index/11.png",
+            "index/12.png",
+            "index/13.png",
+            "index/14.png",
+            "index/15.png",
+            "index/16.png",
+            "index/17.png"
+        ]
+
+    },
+
+
+    project04: {
+
+        number: "04",
+
+        title: "品牌規範",
+
+        author: "First Name Last Name",
+
+        date: "2023",
+
+        description:
+            "Brand Guidelines、品牌識別、視覺規範",
+
+        client:
+            "Sample Corporation",
+
+        role:
+            "Brand Designer",
+
+        images: [
+            "index/b-1.png",
+            "index/b-2.png",
+            "index/b-3.png",
+            "index/b-4.png",
+            "index/b-5.png",
+            "index/b-6.png",
+            "index/b-7.png",
+            "index/b-8.png",
+            "index/b-9.png",
+            "index/b-10.png",
+            "index/b-11.png",
+            "index/b-12.png",
+            "index/b-13.png",
+            "index/b-14.png",
+            "index/b-15.png",
+            "index/b-16.png"
+        ]
+
+    }
+
+};
+
+
+const order = [
+    "project01",
+    "project02",
+    "project03",
+    "project04"
+];
+
+
+let currentProject = null;
+
+
+
+/* =====================================================
+   ELEMENTS
+====================================================== */
+
+const homePage =
+    document.getElementById("homePage");
+
+const detailPage =
+    document.getElementById("detailPage");
+
+const detailTitle =
+    document.getElementById("detailTitle");
+
+const detailAuthor =
+    document.getElementById("detailAuthor");
+
+const detailDate =
+    document.getElementById("detailDate");
+
+const detailDescription =
+    document.getElementById("detailDescription");
+
+const detailClient =
+    document.getElementById("detailClient");
+
+const detailRole =
+    document.getElementById("detailRole");
+
+const detailYear =
+    document.getElementById("detailYear");
+
+const detailGallery =
+    document.getElementById("detailGallery");
+
+
+
+/* =====================================================
+   OPEN PROJECT
+====================================================== */
+
+function openProject(id) {
+
+    const project =
+        projects[id];
+
+    if (!project) return;
+
+
+    currentProject = id;
+
+
+    detailTitle.textContent =
+        project.title;
+
+    detailAuthor.textContent =
+        project.author;
+
+    detailDate.textContent =
+        project.date;
+
+    detailDescription.textContent =
+        project.description;
+
+    detailClient.textContent =
+        project.client;
+
+    detailRole.textContent =
+        project.role;
+
+    detailYear.textContent =
+        project.date;
+
+
+    detailGallery.innerHTML = "";
+
+
+    project.images.forEach(function(src) {
+
+        const image =
+            document.createElement("img");
+
+        image.src = src;
+
+        image.alt =
+            project.title;
+
+        detailGallery.appendChild(image);
+
+    });
+
+
+    const index =
+        order.indexOf(id);
+
+    const nextIndex =
+        (index + 1) % order.length;
+
+    const nextProject =
+        projects[
+            order[nextIndex]
         ];
 
 
-        const portfolioPage =
-            document.querySelector(".portfolio-page");
-
-        const projectDetail =
-            document.querySelector(".project-detail");
-
-        const aboutOverlay =
-            document.querySelector("#aboutOverlay");
-
-        const detailNumber =
-            document.querySelector("#detailNumber");
-
-        const detailTitle =
-            document.querySelector("#detailTitle");
-
-        const detailDescription =
-            document.querySelector("#detailDescription");
-
-        const detailClient =
-            document.querySelector("#detailClient");
-
-        const detailYear =
-            document.querySelector("#detailYear");
-
-        const detailRole =
-            document.querySelector("#detailRole");
-
-        const detailGallery =
-            document.querySelector("#detailGallery");
-
-        const nextProjectNumber =
-            document.querySelector("#nextProjectNumber");
-
-        const nextProjectTitle =
-            document.querySelector("#nextProjectTitle");
+    document.getElementById(
+        "nextNumber"
+    ).textContent =
+        nextProject.number;
 
 
-        let currentProject = null;
+    document.getElementById(
+        "nextTitle"
+    ).textContent =
+        nextProject.title;
 
 
-        /* =====================================================
-           OPEN PROJECT
-        ====================================================== */
+    homePage.classList.add(
+        "hidden"
+    );
 
-        function openProject(projectId) {
-
-            const project = projects[projectId];
-
-            if (!project) {
-                return;
-            }
-
-            currentProject = projectId;
+    detailPage.classList.add(
+        "active"
+    );
 
 
-            detailNumber.textContent =
-                project.number;
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
 
-            detailTitle.textContent =
-                project.title;
-
-            detailDescription.textContent =
-                project.description;
-
-            detailClient.textContent =
-                project.client;
-
-            detailYear.textContent =
-                project.year;
-
-            detailRole.textContent =
-                project.role;
+}
 
 
-            /* Gallery */
 
-            detailGallery.innerHTML = "";
+/* =====================================================
+   CLOSE PROJECT
+====================================================== */
 
-            project.images.forEach(function(image) {
+function closeProject() {
 
-                const imageElement =
-                    document.createElement("img");
+    detailPage.classList.remove(
+        "active"
+    );
 
-                imageElement.src =
-                    image;
+    homePage.classList.remove(
+        "hidden"
+    );
 
-                imageElement.alt =
-                    project.title;
 
-                imageElement.className =
-                    "detail-image";
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
 
-                detailGallery.appendChild(
-                    imageElement
+}
+
+
+
+/* =====================================================
+   PROJECT CLICK
+====================================================== */
+
+document
+    .querySelectorAll(".project")
+    .forEach(function(project) {
+
+        project.addEventListener(
+            "click",
+            function() {
+
+                openProject(
+                    project.dataset.project
                 );
-
-            });
-
-
-            /* Next project */
-
-            const currentIndex =
-                projectOrder.indexOf(projectId);
-
-            const nextIndex =
-                (currentIndex + 1) %
-                projectOrder.length;
-
-            const nextProject =
-                projects[
-                    projectOrder[nextIndex]
-                ];
-
-            nextProjectNumber.textContent =
-                nextProject.number;
-
-            nextProjectTitle.textContent =
-                nextProject.title;
-
-
-            /* Show detail */
-
-            portfolioPage.classList.add(
-                "is-hidden"
-            );
-
-            projectDetail.classList.add(
-                "is-visible"
-            );
-
-            projectDetail.setAttribute(
-                "aria-hidden",
-                "false"
-            );
-
-
-            document.body.classList.add(
-                "detail-open"
-            );
-
-
-            window.scrollTo({
-                top: 0,
-                behavior: "instant"
-            });
-
-        }
-
-
-        /* =====================================================
-           CLOSE PROJECT
-        ====================================================== */
-
-        function closeProject() {
-
-            projectDetail.classList.remove(
-                "is-visible"
-            );
-
-            portfolioPage.classList.remove(
-                "is-hidden"
-            );
-
-            projectDetail.setAttribute(
-                "aria-hidden",
-                "true"
-            );
-
-            document.body.classList.remove(
-                "detail-open"
-            );
-
-            window.scrollTo({
-                top: 0,
-                behavior: "instant"
-            });
-
-        }
-
-
-        /* =====================================================
-           PROJECT CLICK
-        ====================================================== */
-
-        document
-            .querySelectorAll(".project-card")
-            .forEach(function(card) {
-
-                card.addEventListener(
-                    "click",
-                    function() {
-
-                        const projectId =
-                            card.dataset.project;
-
-                        openProject(projectId);
-
-                    }
-                );
-
-            });
-
-
-        /* =====================================================
-           BACK
-        ====================================================== */
-
-        document
-            .querySelector("#backButton")
-            .addEventListener(
-                "click",
-                closeProject
-            );
-
-
-        /* =====================================================
-           NEXT PROJECT
-        ====================================================== */
-
-        document
-            .querySelector("#nextProjectButton")
-            .addEventListener(
-                "click",
-                function() {
-
-                    const currentIndex =
-                        projectOrder.indexOf(
-                            currentProject
-                        );
-
-                    const nextIndex =
-                        (currentIndex + 1) %
-                        projectOrder.length;
-
-                    openProject(
-                        projectOrder[nextIndex]
-                    );
-
-                }
-            );
-
-
-        /* =====================================================
-           HOME
-        ====================================================== */
-
-        document
-            .querySelector("#homeLink")
-            .addEventListener(
-                "click",
-                function(event) {
-
-                    event.preventDefault();
-
-                    closeProject();
-
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth"
-                    });
-
-                }
-            );
-
-
-        document
-            .querySelector("#detailHomeButton")
-            .addEventListener(
-                "click",
-                function() {
-
-                    closeProject();
-
-                }
-            );
-
-
-        /* =====================================================
-           ABOUT
-        ====================================================== */
-
-        document
-            .querySelector("#aboutButton")
-            .addEventListener(
-                "click",
-                function() {
-
-                    aboutOverlay.classList.add(
-                        "is-visible"
-                    );
-
-                }
-            );
-
-
-        document
-            .querySelector("#aboutClose")
-            .addEventListener(
-                "click",
-                function() {
-
-                    aboutOverlay.classList.remove(
-                        "is-visible"
-                    );
-
-                }
-            );
-
-
-        /* =====================================================
-           ESC
-        ====================================================== */
-
-        document.addEventListener(
-            "keydown",
-            function(event) {
-
-                if (event.key === "Escape") {
-
-                    if (
-                        aboutOverlay.classList.contains(
-                            "is-visible"
-                        )
-                    ) {
-
-                        aboutOverlay.classList.remove(
-                            "is-visible"
-                        );
-
-                    } else if (
-                        projectDetail.classList.contains(
-                            "is-visible"
-                        )
-                    ) {
-
-                        closeProject();
-
-                    }
-
-                }
 
             }
         );
 
+    });
 
-        /* =====================================================
-           SIGN UP
-        ====================================================== */
 
-        document
-            .querySelector(".signup-form")
-            .addEventListener(
-                "submit",
-                function(event) {
 
-                    event.preventDefault();
+/* =====================================================
+   BACK
+====================================================== */
 
-                    alert(
-                        "Thank you!"
-                    );
+document
+    .getElementById("backButton")
+    .addEventListener(
+        "click",
+        closeProject
+    );
 
-                }
+
+
+/* =====================================================
+   NEXT
+====================================================== */
+
+document
+    .getElementById("nextButton")
+    .addEventListener(
+        "click",
+        function() {
+
+            const index =
+                order.indexOf(
+                    currentProject
+                );
+
+            const nextIndex =
+                (index + 1) %
+                order.length;
+
+            openProject(
+                order[nextIndex]
             );
 
-    </script>
+        }
+    );
+
+
+
+/* =====================================================
+   LOGO
+====================================================== */
+
+document
+    .getElementById("logo")
+    .addEventListener(
+        "click",
+        function(event) {
+
+            event.preventDefault();
+
+            closeProject();
+
+        }
+    );
+
+
+
+/* =====================================================
+   ABOUT
+====================================================== */
+
+const aboutPanel =
+    document.getElementById(
+        "aboutPanel"
+    );
+
+
+document
+    .getElementById("aboutButton")
+    .addEventListener(
+        "click",
+        function() {
+
+            aboutPanel.classList.add(
+                "active"
+            );
+
+        }
+    );
+
+
+document
+    .getElementById("aboutClose")
+    .addEventListener(
+        "click",
+        function() {
+
+            aboutPanel.classList.remove(
+                "active"
+            );
+
+        }
+    );
+
+
+/* =====================================================
+   ESC
+====================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key !== "Escape") {
+            return;
+        }
+
+
+        if (
+            aboutPanel.classList.contains(
+                "active"
+            )
+        ) {
+
+            aboutPanel.classList.remove(
+                "active"
+            );
+
+            return;
+
+        }
+
+
+        if (
+            detailPage.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeProject();
+
+        }
+
+    }
+);
+
+
+</script>
+
 
 </body>
-
 </html>
