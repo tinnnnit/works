@@ -1,6 +1,6 @@
-/* =========================================================
+/* =====================================================
    RESET
-========================================================= */
+====================================================== */
 
 * {
     box-sizing: border-box;
@@ -10,20 +10,14 @@ html {
     scroll-behavior: smooth;
 }
 
-html,
 body {
     margin: 0;
-    padding: 0;
-}
-
-body {
 
     background: #ffffff;
 
     color: #111111;
 
     font-family:
-        "Helvetica Neue",
         Helvetica,
         Arial,
         "Noto Sans TC",
@@ -32,8 +26,6 @@ body {
     font-weight: 400;
 
     -webkit-font-smoothing: antialiased;
-
-    overflow-x: hidden;
 }
 
 button,
@@ -42,18 +34,12 @@ input {
 }
 
 
-/* =========================================================
+
+/* =====================================================
    HEADER
-========================================================= */
+====================================================== */
 
 .site-header {
-    position: relative;
-
-    z-index: 1000;
-}
-
-
-.portfolio-navbar {
 
     position: fixed;
 
@@ -62,206 +48,194 @@ input {
 
     width: 100%;
 
-    padding:
-        22px
-        36px;
-
-    background:
-        rgba(255, 255, 255, 0.96);
-
     z-index: 1000;
 
-    border-bottom:
-        1px solid
-        rgba(0, 0, 0, 0.08);
-
-    backdrop-filter:
-        blur(8px);
-
-    -webkit-backdrop-filter:
-        blur(8px);
+    background: #ffffff;
 }
 
 
-.nav-inner {
+.header-inner {
 
-    width: 100%;
+    height: 68px;
+
+    padding:
+        0 32px;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
+
+    border-bottom:
+        1px solid
+        #111111;
 }
 
 
-/* =========================================================
-   LOGO
-========================================================= */
-
-.site-logo {
-
-    display: inline-block;
+.logo {
 
     color: #111111;
 
     text-decoration: none;
 
-    font-size: 15px;
+    font-size: 14px;
 
     line-height: 1;
-
-    letter-spacing: 0.02em;
-
-    transition:
-        opacity 0.25s ease;
-}
-
-.site-logo:hover {
-
-    color: #111111;
-
-    opacity: 0.45;
 }
 
 
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-link {
+.about-button {
 
     border: 0;
 
     padding: 0;
 
-    margin: 0;
-
     background: transparent;
 
     color: #111111;
 
-    font-size: 15px;
-
-    line-height: 1;
-
-    letter-spacing: 0.02em;
+    font-size: 14px;
 
     cursor: pointer;
-
-    transition:
-        opacity 0.25s ease;
 }
 
-.about-link:hover {
+
+.logo:hover,
+.about-button:hover {
 
     opacity: 0.45;
 }
 
 
-/* =========================================================
-   PORTFOLIO PAGE
-========================================================= */
 
-.portfolio-page {
+/* =====================================================
+   HOME
+====================================================== */
 
-    width: 100%;
+.home-page {
 
-    padding-top: 100px;
+    padding-top: 68px;
 
     background: #ffffff;
 
     transition:
-        opacity 0.35s ease;
+        opacity .3s ease;
 }
 
 
-.portfolio-page.is-hidden {
+.home-page.hidden {
 
     display: none;
 }
 
 
-/* =========================================================
-   PORTFOLIO LIST
-========================================================= */
 
-.portfolio-list {
+/* =====================================================
+   PROJECT LIST
+====================================================== */
+
+.project-list {
 
     width: 100%;
 
     padding:
-        35px
-        36px
-        120px;
+        48px 32px 120px;
 }
 
 
-/* =========================================================
-   PROJECT CARD
-========================================================= */
 
-.project-card {
+/* =====================================================
+   PROJECT
+====================================================== */
+
+.project {
 
     width: 100%;
 
-    margin: 0;
+    max-width: 1180px;
 
-    padding: 0;
-
-    border: 0;
-
-    background: transparent;
-}
-
-
-.project-card + .project-card {
-
-    margin-top: 120px;
-}
-
-
-/* =========================================================
-   PROJECT BUTTON
-========================================================= */
-
-.project-link {
-
-    display: block;
-
-    width: 100%;
-
-    margin: 0;
-
-    padding: 0;
-
-    border: 0;
-
-    background: transparent;
-
-    color: inherit;
-
-    text-align: left;
+    margin:
+        0 auto 120px;
 
     cursor: pointer;
 }
 
 
-/* =========================================================
-   PROJECT IMAGE
-========================================================= */
+.project:last-child {
 
-.project-image-wrap {
-
-    width: 100%;
-
-    overflow: hidden;
-
-    background: #f4f4f4;
+    margin-bottom: 0;
 }
 
 
+
+/* =====================================================
+   META
+====================================================== */
+
+.project-header {
+
+    width: 100%;
+
+    margin-bottom: 16px;
+}
+
+
+.project-meta {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.3;
+
+    letter-spacing: .01em;
+}
+
+
+
+/* =====================================================
+   PROJECT CONTENT
+====================================================== */
+
+.project-content {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(220px, .75fr);
+
+    column-gap: 70px;
+
+    align-items: end;
+}
+
+
+
+/* =====================================================
+   IMAGE
+====================================================== */
+
 .project-image {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    overflow: hidden;
+
+    background: #f5f5f5;
+}
+
+
+.project-image img {
 
     display: block;
 
@@ -269,140 +243,200 @@ input {
 
     height: auto;
 
-    transform:
-        scale(1);
+    max-height: 600px;
+
+    object-fit: contain;
 
     transition:
-        transform
-        1s
+        opacity .4s ease,
+        transform .6s
         cubic-bezier(
-            0.22,
+            .22,
             1,
-            0.36,
+            .36,
             1
-        ),
-
-        opacity
-        0.5s
-        ease;
+        );
 }
 
 
-.project-link:hover
-.project-image {
+.project:hover
+.project-image img {
+
+    opacity: .88;
 
     transform:
         scale(1.015);
-
-    opacity: 0.92;
 }
 
 
-/* =========================================================
-   PROJECT META
-========================================================= */
 
-.project-meta {
+/* =====================================================
+   COPY
+====================================================== */
+
+.project-copy {
+
+    padding-bottom: 4px;
+}
+
+
+.project-copy h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 400;
+
+    letter-spacing: -.025em;
+}
+
+
+.project-copy p {
+
+    max-width: 300px;
+
+    margin: 0 0 28px;
+
+    color: #666666;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+.read-more {
+
+    padding: 0 0 3px;
+
+    border: 0;
+
+    border-bottom:
+        1px solid
+        #111111;
+
+    background: transparent;
+
+    color: #111111;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.read-more:hover {
+
+    opacity: .45;
+}
+
+
+
+/* =====================================================
+   FOOTER
+====================================================== */
+
+.footer {
+
+    max-width: 1180px;
+
+    margin:
+        0 auto;
+
+    padding:
+        80px 32px 35px;
+
+    border-top:
+        1px solid
+        #111111;
+}
+
+
+.footer-signup {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 70px;
+
+    margin-bottom: 100px;
+}
+
+
+.footer-signup p {
+
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+.footer-signup form {
+
+    display: flex;
+
+    border-bottom:
+        1px solid
+        #111111;
+}
+
+
+.footer-signup input {
 
     width: 100%;
 
-    padding-top: 18px;
+    padding:
+        0 0 10px;
+
+    border: 0;
+
+    outline: 0;
+
+    color: #111111;
+
+    font-size: 12px;
 }
 
 
-/* =========================================================
-   PROJECT META TOP
-========================================================= */
+.footer-signup button {
 
-.project-meta-top {
+    padding:
+        0 0 10px;
+
+    border: 0;
+
+    background: transparent;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.footer-bottom {
 
     display: flex;
 
     justify-content: space-between;
 
-    align-items: center;
-
-    margin-bottom: 22px;
-
     color: #777777;
 
-    font-size: 11px;
-
-    line-height: 1.4;
-
-    letter-spacing: 0.04em;
+    font-size: 10px;
 }
 
 
-/* =========================================================
-   PROJECT TEXT
-========================================================= */
 
-.project-text {
+/* =====================================================
+   ABOUT
+====================================================== */
 
-    max-width: 850px;
-}
-
-
-.project-text h2 {
-
-    margin: 0 0 7px;
-
-    color: #111111;
-
-    font-size: 21px;
-
-    font-weight: 400;
-
-    line-height: 1.25;
-
-    letter-spacing: 0;
-}
-
-
-.project-text p {
-
-    margin: 0;
-
-    color: #777777;
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    line-height: 1.7;
-
-    letter-spacing: 0.01em;
-}
-
-
-/* =========================================================
-   PROJECT INFO
-========================================================= */
-
-.project-info {
-
-    display: flex;
-
-    gap: 35px;
-
-    margin-top: 25px;
-
-    color: #777777;
-
-    font-size: 11px;
-
-    line-height: 1.5;
-
-    letter-spacing: 0.02em;
-}
-
-
-/* =========================================================
-   ABOUT OVERLAY
-========================================================= */
-
-.about-overlay {
+.about-panel {
 
     position: fixed;
 
@@ -416,10 +450,9 @@ input {
 
     justify-content: center;
 
-    padding: 40px;
+    padding: 80px 32px;
 
-    background:
-        rgba(255, 255, 255, 0.97);
+    background: #ffffff;
 
     opacity: 0;
 
@@ -428,12 +461,12 @@ input {
     pointer-events: none;
 
     transition:
-        opacity 0.35s ease,
-        visibility 0.35s ease;
+        opacity .3s ease,
+        visibility .3s ease;
 }
 
 
-.about-overlay.is-visible {
+.about-panel.active {
 
     opacity: 1;
 
@@ -443,152 +476,92 @@ input {
 }
 
 
-.about-inner {
-
-    width: 100%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-
-.about-image {
+.about-content img {
 
     display: block;
 
+    max-width: 85vw;
+
+    max-height: 80vh;
+
     width: auto;
 
-    max-width: 90vw;
-
-    max-height: 82vh;
-
-    object-fit: contain;
+    height: auto;
 }
 
 
-.overlay-close {
+.about-close {
 
-    position: fixed;
+    position: absolute;
 
-    top: 22px;
+    top: 20px;
 
-    right: 35px;
-
-    z-index: 2100;
-
-    width: 35px;
-
-    height: 35px;
-
-    padding: 0;
+    right: 32px;
 
     border: 0;
 
     background: transparent;
 
-    color: #111111;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 30px;
+    font-size: 28px;
 
     font-weight: 300;
 
-    line-height: 30px;
-
     cursor: pointer;
-
-    transition:
-        opacity 0.25s ease;
 }
 
 
-.overlay-close:hover {
 
-    opacity: 0.4;
-}
+/* =====================================================
+   DETAIL
+====================================================== */
 
-
-/* =========================================================
-   PROJECT DETAIL
-========================================================= */
-
-.project-detail {
-
-    position: relative;
-
-    width: 100%;
-
-    min-height: 100vh;
-
-    background: #ffffff;
+.detail-page {
 
     display: none;
+
+    padding-top: 68px;
+
+    background: #ffffff;
 }
 
 
-.project-detail.is-visible {
+.detail-page.active {
 
     display: block;
 }
 
 
-body.detail-open {
-
-    overflow-x: hidden;
-}
-
-
-/* =========================================================
-   DETAIL CONTAINER
-========================================================= */
-
-.detail-container {
+.detail-inner {
 
     width: 100%;
 
+    max-width: 1180px;
+
+    margin: 0 auto;
+
     padding:
-        100px
-        36px
-        0;
+        35px 32px 100px;
 }
 
 
-/* =========================================================
-   DETAIL HEADER
-========================================================= */
 
-.detail-header {
+/* =====================================================
+   DETAIL TOP
+====================================================== */
 
-    position: sticky;
-
-    top: 70px;
-
-    z-index: 50;
+.detail-top {
 
     display: flex;
 
-    align-items: center;
-
     justify-content: space-between;
 
-    width: 100%;
+    align-items: center;
 
-    padding:
-        16px
-        0;
+    padding-bottom: 35px;
 
-    background:
-        rgba(255, 255, 255, 0.94);
-
-    backdrop-filter:
-        blur(8px);
-
-    -webkit-backdrop-filter:
-        blur(8px);
+    border-bottom:
+        1px solid
+        #111111;
 }
 
 
@@ -600,202 +573,153 @@ body.detail-open {
 
     background: transparent;
 
-    color: #111111;
-
-    font-size: 13px;
-
-    line-height: 1.5;
+    font-size: 12px;
 
     cursor: pointer;
-
-    transition:
-        opacity 0.25s ease;
 }
 
 
-.back-button:hover {
-
-    opacity: 0.45;
-}
-
-
-.detail-number {
+.detail-date {
 
     color: #777777;
 
     font-size: 11px;
-
-    line-height: 1;
-
-    letter-spacing: 0.04em;
 }
 
 
-/* =========================================================
-   DETAIL INTRO
-========================================================= */
 
-.detail-intro {
+/* =====================================================
+   DETAIL TITLE
+====================================================== */
+
+.detail-title {
 
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, 1fr);
+        .8fr
+        1.8fr;
 
-    gap: 50px;
-
-    width: 100%;
+    column-gap: 60px;
 
     padding:
-        100px
-        0
-        130px;
+        100px 0 70px;
 }
 
 
-.detail-intro-left {
+.detail-author {
 
-    padding-right: 40px;
-}
-
-
-.detail-label {
-
-    margin: 0 0 25px;
+    margin: 0;
 
     color: #777777;
 
     font-size: 11px;
-
-    line-height: 1.5;
-
-    letter-spacing: 0.04em;
-
-    text-transform: uppercase;
 }
 
 
-.detail-intro h1 {
+.detail-title h1 {
 
     margin: 0;
 
-    color: #111111;
+    font-size:
+        clamp(
+            50px,
+            7vw,
+            100px
+        );
 
-    font-size: clamp(
-        48px,
-        8vw,
-        120px
-    );
+    line-height: .9;
 
     font-weight: 400;
 
-    line-height: 0.95;
-
-    letter-spacing: -0.04em;
-}
-
-
-/* =========================================================
-   DETAIL INTRO RIGHT
-========================================================= */
-
-.detail-intro-right {
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: flex-end;
-
-    padding-bottom: 5px;
+    letter-spacing: -.045em;
 }
 
 
 .detail-description {
 
-    max-width: 620px;
+    grid-column: 2;
 
-    margin-bottom: 55px;
+    max-width: 550px;
+
+    margin:
+        40px 0 0;
+
+    color: #555555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
 }
 
 
-.detail-description p {
 
-    margin: 0;
+/* =====================================================
+   DETAIL INFO
+====================================================== */
 
-    color: #111111;
-
-    font-size: 20px;
-
-    line-height: 1.55;
-
-    font-weight: 400;
-}
-
-
-/* =========================================================
-   DETAIL DATA
-========================================================= */
-
-.detail-data {
+.detail-info {
 
     display: grid;
 
     grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    gap: 25px;
+        repeat(3, 1fr);
 
     border-top:
         1px solid
+        #111111;
+
+    border-bottom:
+        1px solid
+        #111111;
+}
+
+
+.detail-info div {
+
+    padding:
+        17px 0;
+}
+
+
+.detail-info div + div {
+
+    border-left:
+        1px solid
         #dddddd;
 
-    padding-top: 17px;
+    padding-left: 25px;
 }
 
 
-.detail-data div {
+.detail-info span {
 
-    display: flex;
+    display: block;
 
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-
-.detail-data span {
+    margin-bottom: 8px;
 
     color: #777777;
 
     font-size: 10px;
 
-    line-height: 1.4;
-
     text-transform: uppercase;
-
-    letter-spacing: 0.05em;
 }
 
 
-.detail-data strong {
+.detail-info p {
 
-    color: #111111;
+    margin: 0;
 
     font-size: 12px;
-
-    font-weight: 400;
-
-    line-height: 1.5;
 }
 
 
-/* =========================================================
-   DETAIL CONTENT
-========================================================= */
 
-.detail-content {
+/* =====================================================
+   DETAIL TEXT
+====================================================== */
+
+.detail-text {
 
     display: grid;
 
@@ -803,20 +727,16 @@ body.detail-open {
         1fr
         1fr;
 
-    gap: 50px;
-
-    width: 100%;
+    gap: 70px;
 
     padding:
-        0
-        0
-        100px;
+        90px 0;
 }
 
 
-.detail-paragraph {
+.detail-text p {
 
-    max-width: 600px;
+    max-width: 500px;
 
     margin: 0;
 
@@ -828,21 +748,18 @@ body.detail-open {
 }
 
 
-/* =========================================================
-   DETAIL GALLERY
-========================================================= */
+
+/* =====================================================
+   GALLERY
+====================================================== */
 
 .detail-gallery {
 
     width: 100%;
-
-    margin: 0;
-
-    padding: 0;
 }
 
 
-.detail-image {
+.detail-gallery img {
 
     display: block;
 
@@ -850,52 +767,43 @@ body.detail-open {
 
     height: auto;
 
-    margin: 0 0 45px;
+    max-height: 850px;
 
-    background: #f4f4f4;
+    object-fit: contain;
+
+    margin-bottom: 30px;
+
+    background: #f5f5f5;
 }
 
 
-.detail-image:last-child {
 
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
+/* =====================================================
    NEXT PROJECT
-========================================================= */
+====================================================== */
 
 .next-project {
 
-    width: 100%;
-
-    margin-top: 150px;
+    margin-top: 100px;
 
     padding:
-        40px
-        0
-        140px;
+        30px 0 80px;
 
     border-top:
         1px solid
-        #dddddd;
+        #111111;
 }
 
 
-.next-project > p {
+.next-project > span {
 
-    margin: 0 0 35px;
+    display: block;
+
+    margin-bottom: 35px;
 
     color: #777777;
 
     font-size: 11px;
-
-    line-height: 1.4;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.05em;
 }
 
 
@@ -904,11 +812,7 @@ body.detail-open {
     display: grid;
 
     grid-template-columns:
-        70px
-        1fr
-        30px;
-
-    align-items: center;
+        60px 1fr 30px;
 
     width: 100%;
 
@@ -917,8 +821,6 @@ body.detail-open {
     border: 0;
 
     background: transparent;
-
-    color: #111111;
 
     text-align: left;
 
@@ -926,681 +828,237 @@ body.detail-open {
 }
 
 
-#nextProjectNumber {
+.next-project strong {
 
-    color: #777777;
-
-    font-size: 11px;
-}
-
-
-#nextProjectTitle {
-
-    font-size: clamp(
-        35px,
-        7vw,
-        100px
-    );
-
-    line-height: 1;
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            65px
+        );
 
     font-weight: 400;
 
-    letter-spacing: -0.03em;
+    line-height: 1;
+
+    letter-spacing: -.03em;
 }
 
 
-.next-project button > span:last-child {
-
-    font-size: 24px;
+.next-project button > span {
 
     text-align: right;
 
-    transition:
-        transform 0.35s ease;
+    font-size: 20px;
 }
 
 
-.next-project button:hover
-> span:last-child {
 
-    transform:
-        translateX(8px);
-}
-
-
-/* =========================================================
-   DETAIL FOOTER
-========================================================= */
-
-.detail-footer {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    width: 100%;
-
-    padding:
-        25px
-        0
-        35px;
-
-    border-top:
-        1px solid
-        #dddddd;
-
-    color: #777777;
-
-    font-size: 11px;
-
-    line-height: 1.5;
-}
-
-
-.detail-footer button {
-
-    padding: 0;
-
-    border: 0;
-
-    background: transparent;
-
-    color: #777777;
-
-    font-size: 11px;
-
-    cursor: pointer;
-
-    transition:
-        color 0.25s ease;
-}
-
-
-.detail-footer button:hover {
-
-    color: #111111;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.site-footer {
-
-    width: 100%;
-
-    margin-top: 80px;
-
-    border-top:
-        1px solid
-        #dddddd;
-}
-
-
-.footer-top {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr
-        1fr;
-
-    gap: 50px;
-
-    padding:
-        70px
-        0
-        90px;
-}
-
-
-.footer-top p {
-
-    margin: 0;
-
-    font-size: 14px;
-
-    line-height: 1.5;
-}
-
-
-.signup-form {
-
-    display: flex;
-
-    width: 100%;
-
-    border-bottom:
-        1px solid
-        #111111;
-}
-
-
-.signup-form input {
-
-    flex: 1;
-
-    min-width: 0;
-
-    padding:
-        0
-        0
-        12px;
-
-    border: 0;
-
-    outline: none;
-
-    background: transparent;
-
-    color: #111111;
-
-    font-size: 13px;
-}
-
-
-.signup-form input::placeholder {
-
-    color: #888888;
-}
-
-
-.signup-form button {
-
-    padding:
-        0
-        0
-        12px;
-
-    border: 0;
-
-    background: transparent;
-
-    color: #111111;
-
-    font-size: 13px;
-
-    cursor: pointer;
-}
-
-
-.footer-bottom {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    padding:
-        25px
-        0
-        35px;
-
-    border-top:
-        1px solid
-        #dddddd;
-
-    color: #777777;
-
-    font-size: 11px;
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .portfolio-list {
-
-        padding-left: 25px;
-
-        padding-right: 25px;
-    }
-
-
-    .project-card + .project-card {
-
-        margin-top: 90px;
-    }
-
-
-    .detail-container {
-
-        padding-left: 25px;
-
-        padding-right: 25px;
-    }
-
-
-    .detail-intro {
-
-        gap: 35px;
-    }
-
-
-    .detail-content {
-
-        gap: 35px;
-    }
-
-
-    .footer-top {
-
-        gap: 35px;
-    }
-
-}
-
-
-/* =========================================================
+/* =====================================================
    MOBILE
-========================================================= */
+====================================================== */
 
 @media (max-width: 767px) {
 
-    /* Header */
 
-    .portfolio-navbar {
+    .header-inner {
 
-        padding:
-            20px;
-    }
-
-
-    .site-logo,
-    .about-link {
-
-        font-size: 14px;
-    }
-
-
-    /* Portfolio */
-
-    .portfolio-page {
-
-        padding-top: 80px;
-    }
-
-
-    .portfolio-list {
+        height: 58px;
 
         padding:
-            25px
-            20px
-            80px;
+            0 18px;
     }
 
 
-    .project-card + .project-card {
-
-        margin-top: 75px;
-    }
-
-
-    .project-meta {
-
-        padding-top: 15px;
-    }
-
-
-    .project-meta-top {
-
-        margin-bottom: 17px;
-
-        font-size: 10px;
-    }
-
-
-    .project-text h2 {
-
-        font-size: 17px;
-
-        margin-bottom: 6px;
-    }
-
-
-    .project-text p {
-
-        font-size: 11px;
-
-        line-height: 1.65;
-    }
-
-
-    .project-info {
-
-        margin-top: 18px;
-
-        gap: 20px;
-
-        font-size: 10px;
-    }
-
-
-    /* About */
-
-    .about-overlay {
-
-        padding:
-            20px;
-    }
-
-
-    .about-image {
-
-        max-width: 92vw;
-
-        max-height: 80vh;
-    }
-
-
-    .overlay-close {
-
-        top: 18px;
-
-        right: 18px;
-
-        font-size: 28px;
-    }
-
-
-    /* Detail */
-
-    .detail-container {
-
-        padding:
-            80px
-            20px
-            0;
-    }
-
-
-    .detail-header {
-
-        top: 64px;
-
-        padding:
-            15px
-            0;
-    }
-
-
-    .back-button {
+    .logo,
+    .about-button {
 
         font-size: 12px;
     }
 
 
-    .detail-intro {
+    .home-page {
 
-        display: block;
+        padding-top: 58px;
+    }
+
+
+    .project-list {
 
         padding:
-            65px
-            0
-            80px;
+            30px 18px 80px;
     }
 
 
-    .detail-intro-left {
+    .project {
 
-        padding-right: 0;
-
-        margin-bottom: 60px;
+        margin-bottom: 85px;
     }
 
 
-    .detail-label {
+    .project-content {
+
+        display: block;
+    }
+
+
+    .project-image {
+
+        max-width: 100%;
 
         margin-bottom: 20px;
     }
 
 
-    .detail-intro h1 {
+    .project-image img {
 
-        font-size: 58px;
+        max-height: 500px;
     }
 
 
-    .detail-description {
+    .project-copy h2 {
 
-        margin-bottom: 45px;
+        font-size: 25px;
     }
 
 
-    .detail-description p {
+    .project-copy p {
 
-        font-size: 17px;
+        max-width: 100%;
 
-        line-height: 1.6;
+        font-size: 12px;
+
+        margin-bottom: 20px;
     }
 
 
-    .detail-data {
+    .project-meta {
 
-        grid-template-columns:
-            repeat(3, 1fr);
-
-        gap: 15px;
+        font-size: 9px;
     }
 
 
-    .detail-data strong {
+    .footer {
 
-        font-size: 11px;
+        padding:
+            55px 18px 25px;
     }
 
 
-    /* Detail content */
-
-    .detail-content {
+    .footer-signup {
 
         display: block;
 
-        padding-bottom: 65px;
+        margin-bottom: 70px;
     }
 
 
-    .detail-paragraph {
+    .footer-signup p {
 
-        max-width: none;
+        margin-bottom: 35px;
+    }
 
-        font-size: 13px;
 
-        line-height: 1.8;
+    .detail-page {
+
+        padding-top: 58px;
+    }
+
+
+    .detail-inner {
+
+        padding:
+            25px 18px 70px;
+    }
+
+
+    .detail-title {
+
+        display: block;
+
+        padding:
+            65px 0 55px;
+    }
+
+
+    .detail-author {
 
         margin-bottom: 30px;
     }
 
 
-    /* Images */
+    .detail-title h1 {
 
-    .detail-image {
+        font-size: 55px;
+    }
+
+
+    .detail-description {
+
+        margin-top: 30px;
+
+        font-size: 13px;
+    }
+
+
+    .detail-info {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .detail-info div + div {
+
+        border-left: 0;
+
+        border-top:
+            1px solid
+            #dddddd;
+
+        padding-left: 0;
+    }
+
+
+    .detail-text {
+
+        display: block;
+
+        padding:
+            60px 0;
+    }
+
+
+    .detail-text p {
+
+        margin-bottom: 25px;
+
+        font-size: 13px;
+    }
+
+
+    .detail-gallery img {
 
         margin-bottom: 15px;
     }
 
 
-    /* Next */
-
     .next-project {
 
-        margin-top: 80px;
-
-        padding:
-            30px
-            0
-            90px;
-    }
-
-
-    .next-project > p {
-
-        margin-bottom: 25px;
+        margin-top: 70px;
     }
 
 
     .next-project button {
 
         grid-template-columns:
-            45px
-            1fr
-            20px;
+            40px 1fr 20px;
     }
 
 
-    #nextProjectTitle {
-
-        font-size: 42px;
-    }
-
-
-    /* Footer */
-
-    .footer-top {
-
-        display: block;
-
-        padding:
-            50px
-            0
-            65px;
-    }
-
-
-    .footer-top p {
-
-        margin-bottom: 40px;
-
-        font-size: 13px;
-    }
-
-
-    .detail-footer {
-
-        padding-bottom: 25px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .portfolio-list {
-
-        padding-left: 15px;
-
-        padding-right: 15px;
-    }
-
-
-    .project-card + .project-card {
-
-        margin-top: 60px;
-    }
-
-
-    .project-info {
-
-        flex-direction: column;
-
-        gap: 5px;
-    }
-
-
-    .detail-container {
-
-        padding-left: 15px;
-
-        padding-right: 15px;
-    }
-
-
-    .detail-intro h1 {
-
-        font-size: 48px;
-    }
-
-
-    .detail-data {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 18px;
-    }
-
-
-    .detail-data div {
-
-        display: grid;
-
-        grid-template-columns:
-            80px
-            1fr;
-
-        gap: 10px;
-    }
-
-
-    #nextProjectTitle {
+    .next-project strong {
 
         font-size: 35px;
-    }
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-.project-link:focus-visible,
-.about-link:focus-visible,
-.back-button:focus-visible,
-.next-project button:focus-visible,
-.site-logo:focus-visible {
-
-    outline:
-        1px solid
-        #111111;
-
-    outline-offset: 5px;
-}
-
-
-/* =========================================================
-   REDUCE MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-
-        scroll-behavior: auto;
-    }
-
-
-    *,
-    *::before,
-    *::after {
-
-        transition:
-            none !important;
-
-        animation:
-            none !important;
     }
 
 }
